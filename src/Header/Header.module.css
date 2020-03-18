@@ -1,0 +1,26 @@
+.header {
+  align-items: center;
+  display: flex;
+  margin:16px 100px 16px 0px;
+  /* flex-grow: 1; */
+  /* background-color: black; */
+}
+
+.logo {
+  text-align: end;
+  font-weight: bold;
+  margin-right: 32px;
+}
+
+.image {
+  width: 65%;
+}
+
+.nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  flex-flow: row wrap;
+  color: white;
+}
