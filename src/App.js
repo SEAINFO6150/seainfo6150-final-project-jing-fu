@@ -8,6 +8,7 @@ import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
 import Header from "./Header/Header.jsx";
 import Footer from "./Footer/Footer.jsx";
+import Categroy from "./Category/Category.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -28,7 +29,11 @@ function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
+        <Route path="/aviation" exact component={Categroy} />
+        <Route path="/computer" exact component={Categroy} />
+        <Route path="/engineering" exact component={Categroy} />
+        <Route path="/eletronics" exact component={Categroy} />
+        <Route path="/science" exact component={Categroy} />
         {/* passing parameters via a route path */}
         <Route
           path="/bar/:categoryId/:productId"
