@@ -9,6 +9,7 @@ import Error from "./Error/Error.jsx";
 import Header from "./Header/Header.jsx";
 import Footer from "./Footer/Footer.jsx";
 import Categroy from "./Category/Category.jsx";
+import ProductDetail from "./Detail/ProductDetail.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -30,7 +31,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/aviation" exact component={Categroy} />
-        <Route path="/computer" exact component={Categroy} />
+        <Route path="/computer" exact component={ProductDetail} />
         <Route path="/engineering" exact component={Categroy} />
         <Route path="/eletronics" exact component={Categroy} />
         <Route path="/science" exact component={Categroy} />
