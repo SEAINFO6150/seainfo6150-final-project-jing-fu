@@ -23,9 +23,7 @@ const Footer = () => {
         </div>
         <div className={styles.payment}>
           <h4>Payment Support</h4>
-          <Link to={"/"}>
-            <img className={styles.image} src="/images/card-logo.jpg" alt="card logo" />
-          </Link>
+          <img className={styles.image} src="/images/card-logo.jpg" alt="card logo" />
         </div>
       </div>
       <div className={styles.copyright}><p>© Copyright 2020, Corporation. All Rights Reserved Privacy Policy Data Policy Washington Do Not Sell Terms and Conditions Agreement</p></div>

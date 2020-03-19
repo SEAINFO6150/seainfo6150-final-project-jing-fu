@@ -7,16 +7,16 @@ import styles from './ProductDetail.module.css';
 const ProductDetail = () => {
   return (
     <div className={styles.container}>
-        <div className={styles.left}>
+        <section className={styles.productDesc}>
         <img src="/images/treefrog.jpg" alt="tree frog" />
          <h3>Description</h3>
         <p>props:product description paragraph</p>
-        </div>
-        <div className={styles.right}>
+        </section>
+        <section className={styles.ProductPrice}>
          <h3>props:Product Name/title</h3>
          <p>props:Product price</p>
          <input className={styles.checkout} type="submit" value="Check out" />
-         </div>
+         </section>
     </div>
   )
 }
