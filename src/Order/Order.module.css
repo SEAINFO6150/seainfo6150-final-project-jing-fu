@@ -1,0 +1,328 @@
+.container {
+  margin-left:15%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input {
+  height: 2rem;
+  border: .05rem solid #dadada;
+  padding-left: 1rem;
+  outline: none;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+/* section shipping */
+.shipping {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 20%;
+}
+
+.ship {
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px 30px;
+}
+
+.emailAddress {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+}
+
+.email {
+  width: 100%;
+}
+
+.firstName {
+  grid-column: 1 / span 1;
+  grid-row: 2 / 3;
+}
+
+.first {
+  width: 100%;
+}
+
+.lastName {
+  grid-column: 2 / span 1;
+  grid-row: 2 / 3;
+}
+
+.last {
+  width: 100%;
+}
+
+.firstAddress {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+
+.address1 {
+  width: 100%;
+}
+
+.secondAddress {
+  grid-column: 1 / span 1;
+  grid-row: 4 / 5;
+}
+
+.address2 {
+  width: 100%;
+}
+
+.cityAddress {
+  grid-column: 2 / span 1;
+  grid-row: 4 / 5;
+}
+
+.city {
+  width: 100%;
+}
+
+select {
+  height: 2.2rem;
+  border: .05rem solid #dadada;
+  outline: none;
+  margin-bottom: 0.5rem;
+  color:rgba(128, 128, 128);
+  background-color: white;
+  padding-left: 0.8rem;
+  width: 100%;
+}
+
+.selectState {
+  grid-column: 1 / span 1;
+  grid-row: 5 / 6;
+}
+
+.state {
+  width: 100%
+}
+
+.zipNum {
+  grid-column: 2 / span 1;
+  grid-row: 5 / 6;
+}
+
+.zipcode {
+  width: 100%;
+}
+
+.telephone {
+  grid-column: 1/ span 2;
+  grid-row: 6 / 7;
+}
+
+.tel {
+  width: 100%;
+}
+
+/* section billing */
+
+.billing {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.card {
+  height: 35%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:5px 10px;
+  align-items: center;
+}
+
+.tabs {
+  list-style-type: none;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  display: flex;
+  padding-left: 0rem;
+  height: 2rem;
+}
+
+.tab {
+  border: .05rem solid #dadada;
+  margin-right: 10px;
+  width: 40%;
+  text-align: center;
+  padding-Top:5px;
+  background-color:rgba(215,212,212,1);
+}
+
+.cardNumber {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+}
+
+.cardNum {
+  width: 80%;
+}
+
+.cardLogo {
+  grid-column: 3 / span 1;
+  grid-row: 2 / 3;
+}
+
+.creditCard {
+  width: 100%;
+}
+
+.expMonth {
+  grid-column: 1 / span 1;
+  grid-row: 3 / 4;
+}
+
+.month {
+  width: 100%;
+}
+
+.expYear {
+  grid-column: 2 / span 1;
+  grid-row: 3 / 4;
+}
+
+.year {
+  width: 100%;
+}
+
+.cvv {
+  grid-column: 3 / span 1;
+  grid-row: 3 / 4;
+}
+
+.cvvNum {
+  width: 100%;
+}
+
+.giftOptions {
+  height: 30%; 
+  width: 100%;
+  border: .05rem solid #dadada;
+  border-radius: 5px;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: 10% 90%;
+  grid-gap: 0px 20px; */
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.giftIcon {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.gift1 {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.gift2{
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.giftOnly {
+  width: 3%;
+  margin-right: 1rem;
+}
+
+.giftSubscribe {
+  width: 3%;
+  margin-right: 1rem;
+}
+
+/* .giftIcon {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  margin-left: 20px;
+}
+
+.giftOnly {
+  width: 100%;
+  grid-column: 1 / span 1;
+  grid-row: 2 / 3;
+}
+
+.giftOnlyText {
+  grid-column: 2 / span 1;
+  grid-row: 2 / 3;
+}
+
+.giftSubscribe {
+  width: 100%;
+  grid-column: 1 / span 1;
+  grid-row: 3 / 4;
+}
+
+.giftSubscribeText {
+  grid-column: 2 / span 1;
+  grid-row: 3 / 4;
+} */
+
+p {
+  color:rgba(128, 128, 128);
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+h2 {
+  margin-left: 30%;
+}
+
+.error {
+  display: none;
+}
+
+.cvvTooltip {
+  display: none;
+}
+
+/* section summery */
+
+.summary {
+  margin-bottom: 30px;
+}
+
+.orderDetails {
+  display: flex;
+}
+
+.imageHolder {
+  width: 30%;
+}
+
+.productDetail {
+  width: 30%;
+}
+
+.productPic {
+  width: 20%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
