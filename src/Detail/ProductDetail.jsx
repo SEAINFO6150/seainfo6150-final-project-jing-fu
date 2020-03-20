@@ -1,6 +1,4 @@
 import React from 'react'
-import MagList from "../MagList/MagList";
-import {Link} from "react-router-dom";
 
 import styles from './ProductDetail.module.css';
 
