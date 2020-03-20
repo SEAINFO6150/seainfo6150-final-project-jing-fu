@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className={styles.contact}>
           <h4>Contact Information</h4>
-          <p>email <address>techmags@gmail.com</address></p>
+          <p>email <a href="mailto:techmagazines@gmail.com">techmagazines@gmail.com</a></p>
         </div>
         <div className={styles.payment}>
           <h4>Payment Support</h4>

@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
 import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
@@ -12,6 +11,7 @@ import Categroy from "./Category/Category.jsx";
 import ProductDetail from "./Detail/ProductDetail.jsx";
 import Order from "./Order/Order.jsx";
 import About from "./About/About.jsx";
+import Confirm from "./Confirm/Confirm.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -35,7 +35,7 @@ function App() {
         <Route path="/aviation" exact component={Categroy} />
         <Route path="/computer" exact component={ProductDetail} />
         <Route path="/engineering" exact component={Order} />
-        <Route path="/eletronics" exact component={Categroy} />
+        <Route path="/electronics" exact component={Confirm} />
         <Route path="/science" exact component={Categroy} />
         <Route path="/about" exact component={About} />
         {/* passing parameters via a route path */}

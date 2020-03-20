@@ -6,7 +6,7 @@ const Order = () => {
   return (
     <div className={styles.container}>
       <section className={styles.checkout}>
-        <h2>Check out</h2>
+        <h2 className={styles.title}>Check out</h2>
         <div className={styles.main}>
           <section className={styles.shipping}>
             <h3>Shipping</h3>
@@ -173,11 +173,11 @@ const Order = () => {
                 {/* <div id="gift_to_template" className={styles.giftContainer}> */}
                 <label className={styles.gift1} for="giftOnly">
                   <input className={styles.giftOnly} type="checkbox" name="giftOption" id="giftOnly" value="giftOnly" aria-invalid="false" />
-                  <p className={styles.giftOnlyText}>I would like to give this as a gift.</p>
+                  <p className={styles.giftText}>I would like to give this as a gift.</p>
                 </label>
                 <label className={styles.gift2} for="giftAndSubscription">
                   <input className={styles.giftSubscribe} type="checkbox" name="giftOption" id="giftAndSubscription" value="giftAndSubscription" aria-invalid="false" />
-                  <p className={styles.giftSubscribeText}>I would like to give this as a gift and subscribe myself.</p>
+                  <p className={styles.giftText}>I would like to give this as a gift and subscribe myself.</p>
                 </label>
               </div>
               {/* </div> */}
@@ -185,7 +185,7 @@ const Order = () => {
         </div>
       </section>
       <section className={styles.summary}>
-        <h2>Order Summary</h2>
+        <h2 className={styles.title}>Order Summary</h2>
         <div className={styles.orderDetails}>
           <section className={styles.imageHolder}>
             <a href="https://www.discountmags.com/magazine/discover" >

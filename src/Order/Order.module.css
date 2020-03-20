@@ -279,13 +279,13 @@ select {
   grid-row: 3 / 4;
 } */
 
-p {
+.giftText {
   color:rgba(128, 128, 128);
   width: 100%;
   font-size: 0.8rem;
 }
 
-h2 {
+.title {
   margin-left: 30%;
 }
 
