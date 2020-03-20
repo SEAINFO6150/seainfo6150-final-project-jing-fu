@@ -4,15 +4,18 @@
   justify-content: space-between;
 }
 
-.left {
+.productDesc {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 30%;
+  margin: 0px 10% 0px 10%;
 }
 
-.right {
+.ProductPrice {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 60%;
 }
 

@@ -11,6 +11,7 @@ import Footer from "./Footer/Footer.jsx";
 import Categroy from "./Category/Category.jsx";
 import ProductDetail from "./Detail/ProductDetail.jsx";
 import Order from "./Order/Order.jsx";
+import About from "./About/About.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -36,6 +37,7 @@ function App() {
         <Route path="/engineering" exact component={Order} />
         <Route path="/eletronics" exact component={Categroy} />
         <Route path="/science" exact component={Categroy} />
+        <Route path="/about" exact component={About} />
         {/* passing parameters via a route path */}
         <Route
           path="/bar/:categoryId/:productId"

@@ -319,6 +319,11 @@ h2 {
   width: 20%;
 }
 
+.submitOrder {
+  margin-top: 2rem;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }

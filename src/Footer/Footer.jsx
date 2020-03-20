@@ -26,7 +26,7 @@ const Footer = () => {
           <img className={styles.image} src="/images/card-logo.jpg" alt="card logo" />
         </div>
       </div>
-      <div className={styles.copyright}><p>© Copyright 2020, Corporation. All Rights Reserved Privacy Policy Data Policy Washington Do Not Sell Terms and Conditions Agreement</p></div>
+      <div className={styles.copyright}><p>© Copyright 1999-2020, TechMag Corporation. All Rights Reserved Privacy Policy Data Policy Washington Do Not Sell Terms and Conditions Agreement</p></div>
     </div>
   )
 }
