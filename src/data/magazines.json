@@ -115,6 +115,29 @@
     }
   },
   {
+    "title": "Astronomy",
+    "name":"Astronomy Magazine",
+    "category": "Science",
+    "categoryId": "science",
+    "productId":"astronomy",
+    "ourPrice": "$38.95",
+    "coverPrice": "$59.99",
+    "youSave:": "$21.04(35%)",
+    "oneYearIssues": "12 issues / 1 year",
+    "twoYearIssues": "24 issues / 2 year",
+    "description": "Astronomy is a science and nature magazine that encourages readers to explore the universe and become enamored by space.With roots dating back to 1973, Astronomy continues to flourish as the world's best-selling astronomy magazine. Much of its success ties to its team's ability to assemble the best, most-absorbing material relating to the stars, planets, universe and space. The magazine features stunning photography, well-illustrated articles and beautifully designed pages. Content, which addresses both the science and hobby of astronomy, includes a mix of columns about sky viewing, reader-submitted astrophotography, and articles about astronomy and astrophysics.",
+    "publisher": "Kevin Keefe / Kalmbach Publishing",
+    "ISSN": "0091-6458",
+    "yearFounded": "1973",
+    "Editor": "David J. Eicher",
+    "website": "https://astronomy.com/",
+    "image": {
+      "_url": "https://tm4.imgix.net/https%3A%2F%2Fwww.topmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2Fi%2F14115-astronomy-Cover-2019-November-1-Issue.jpg?auto=format&cs=strip&h=820&lossless=1&w=600&s=c2c29f75bc4ebde354506f6b81871f97",
+      "_width": "300",
+      "_height": "391"
+    }
+  },
+  {
     "title": "Popular Science",
     "name":"Popular Science Magazine",
     "category": "Electronics",
@@ -160,29 +183,7 @@
       "_height": "526"
     }
   },
-  {
-    "title": "Astronomy",
-    "name":"Astronomy Magazine",
-    "category": "Science",
-    "categoryId": "science",
-    "productId":"astronomy",
-    "ourPrice": "$38.95",
-    "coverPrice": "$59.99",
-    "youSave:": "$21.04(35%)",
-    "oneYearIssues": "12 issues / 1 year",
-    "twoYearIssues": "24 issues / 2 year",
-    "description": "Astronomy is a science and nature magazine that encourages readers to explore the universe and become enamored by space.With roots dating back to 1973, Astronomy continues to flourish as the world's best-selling astronomy magazine. Much of its success ties to its team's ability to assemble the best, most-absorbing material relating to the stars, planets, universe and space. The magazine features stunning photography, well-illustrated articles and beautifully designed pages. Content, which addresses both the science and hobby of astronomy, includes a mix of columns about sky viewing, reader-submitted astrophotography, and articles about astronomy and astrophysics.",
-    "publisher": "Kevin Keefe / Kalmbach Publishing",
-    "ISSN": "0091-6458",
-    "yearFounded": "1973",
-    "Editor": "David J. Eicher",
-    "website": "https://astronomy.com/",
-    "image": {
-      "_url": "https://tm4.imgix.net/https%3A%2F%2Fwww.topmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2Fi%2F14115-astronomy-Cover-2019-November-1-Issue.jpg?auto=format&cs=strip&h=820&lossless=1&w=600&s=c2c29f75bc4ebde354506f6b81871f97",
-      "_width": "300",
-      "_height": "391"
-    }
-  },
+  
   {
     "title": "MAC Life",
     "name":"MAC Life Magazine",
