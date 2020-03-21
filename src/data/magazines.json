@@ -1,0 +1,175 @@
+[
+  {
+    "title": "Discover",
+    "name":"Discover",
+    "category": "Science",
+    "ourPrice": "19.95",
+    "coverPrice": "$29.99",
+    "youSave:": "$10.04(33%)",
+    "oneYearIssues": "8 issues / 1 year",
+    "twoYearIssues": "16 issues / 2 year",
+    "description": "Discover magazine published its first edition in 1980.[3] Discover was originally launched into a burgeoning market for science magazines aimed at educated non-professionals, intended to be easier to read than Scientific American but more detailed and science-oriented than Popular Science.Discover magazine published its first edition in 1980.[3] Discover was originally launched into a burgeoning market for science magazines aimed at educated non-professionals, intended to be easier to read than Scientific American but more detailed and science-oriented than Popular Science.",
+    "publisher": "Kalmbach Publishing",
+    "ISSN": "0274-7529",
+    "yearFounded": "1980",
+    "editor": "Becky Lang",
+    "website": "https://www.discovermagazine.com/",
+    "image": {
+      "_url": "https://dm6.imgix.net/https%3A%2F%2Fwww.discountmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2Fi%2F4577-discover-Cover-2020-March-1-Issue.jpg?auto=format&cs=strip&h=509&lossless=1&w=387&s=5b2f6b1004ee4bda33e331173c283a60",
+      "_width": "387",
+      "_height": "508"
+    }
+  },
+  {
+    "title": "Engineering",
+    "name":"Engineering",
+    "category": "Engineering",
+    "ourPrice": "$79.99",
+    "coverPrice": "$129.89",
+    "youSave:": "$49.9(38%)",
+    "oneYearIssues": "12 issues / 1 year",
+    "twoYearIssues": "24 issues / 2 year",
+    "description":"Engineering magazine: for innovators in technology, manufacturing and management. For over 150 years Engineering magazine has held a unique place in industry and continues to innovate, inform and influence – a respected and trusted voice of authority for the profession.Today the magazine researches and reports on the latest manufacturing techniques, information technology, product development and management strategies.",
+    "publisher": "Media Culture PLC",
+    "ISSN": "0013-7782",
+    "yearFounded": "1865",
+    "editor": "Steve Welch",
+    "website": "http://engineeringmagazine.co.uk/",
+    "image": {
+      "_url": "http://engineeringmagazine.co.uk/wp-site/wp-content/uploads/2020/02/Engineering-Jan-Feb-20.jpg",
+      "_width": "189",
+      "_height": "268"
+    }
+  },
+  {
+    "title": "Wired",
+    "name":"Wired",
+    "category": "Computer",
+    "ourPrice": "19.99",
+    "coverPrice": "$29.89",
+    "youSave:": "$19.9(33%)",
+    "oneYearIssues": "11 issues / 1 year",
+    "twoYearIssues": "22 issues / 2 year",
+    "description": "Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics.Wired, which touted itself as \"the Rolling Stone of technology\",[9] made its debut at the Macworld conference on January 2, 1993.[10] A great success at its launch, it was lauded for its vision, originality, innovation, and cultural impact.[citation needed] In its first four years, the magazine won two National Magazine Awards for General Excellence and one for Design.",
+    "publisher": "Condé Nast Publications",
+    "ISSN": "1059-1028",
+    "yearFounded": "1993",
+    "editor": "Nicholas Thompson",
+    "website": "https://www.wired.com/",
+    "image": {
+      "_url": "https://dm4.imgix.net/https%3A%2F%2Fwww.discountmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2Fi%2F5452-wired-Cover-2020-March-1-Issue.jpg?auto=format%2Ccompress&cs=strip&h=1018&w=774&s=133b4f5e36c93bd985c9ed413c75bf48",
+      "_width": "387",
+      "_height": "526"
+    }
+  },
+  {
+    "title": "ENR",
+    "name":"Engineering News-Record",
+    "category": "Engineering",
+    "ourPrice": "$89.99",
+    "coverPrice": "$119.89",
+    "youSave:": "$29.9(25%)",
+    "oneYearIssues": "26 issues / 1 year",
+    "twoYearIssues": "52 issues / 2 year",
+    "description": "In 1917, following the death of John Alexander Hill, James H. McGraw merged the McGraw and the Hill Publishing Companies. With the merger of both companies the unification of the engineering journals seemed logical, but the proposal met with strong resistance. If magazines can possess personalities, then the Record was perceived as aggressive and vulgar, while the News was considered stodgy and abstruse. The staff at the Record lobbied for their publication's independence. McGraw, however, wanted to forge an alliance with the News because of its standing in the higher echelons of the profession. The first issue of Engineering News-Record was published on April 5, 1917. On January 1st, 1987 the acronym ENR was adopted as the title of the magazine.",
+    "publisher": "BNP Media II, LLC",
+    "ISSN": "0891-9526",
+    "yearFounded": "1917",
+    "editor": "Janice L. Tuchman",
+    "website": "https://www.enr.com/",
+    "image": {
+      "_url": "https://www.magazineline.com/~/media/Shared/Images/Products/E/AXN_EngineeringNews-Record_131104.ashx?h=720&iar=1&w=565",
+      "_width": "382",
+      "_height": "486"
+    }
+  },
+  {
+    "title": "National Geographic",
+    "name":"National Geographic",
+    "category": "Science",
+    "ourPrice": "$39.00",
+    "coverPrice": "$71.89",
+    "youSave:": "$32.89(46%)",
+    "oneYearIssues": "12 issues / 1 year",
+    "twoYearIssues": "24 issues / 2 year",
+    "description": "National Geographic is a science and nature magazine that provides readers with engaging articles about nature, history, and world cultures, accompanied by vivid photographs.National Geographic is the world's favorite science and nature magazine, and has been published continuously since its initial issue in 1888. The official magazine of the National Geographic Society, it is known for its striking photos, in-depth looks at global cultures and traditions, and for its insights into human history and development.",
+    "publisher": "NG Media",
+    "ISSN": "00027-9358",
+    "yearFounded": "1888",
+    "editor": "Susan Goldberg",
+    "website": "https://www.nationalgeographic.com/magazine/",
+    "image": {
+      "_url": "https://secure.static.meredith.com/crt/store/covers/magazines/nmo/1140_l.jpg",
+      "_width": "331",
+      "_height": "452"
+    }
+  },
+  {
+    "title": "Popular Science",
+    "name":"Popular Science",
+    "category": "Electronics",
+    "ourPrice": "$11.99",
+    "coverPrice": "$20.59",
+    "youSave:": "$8.6(42%)",
+    "oneYearIssues": "4 issues / 1 year",
+    "twoYearIssues": "8 issues / 2 year",
+    "description": "The Popular Science Monthly, as the publication was originally called, was founded in May 1872[3] by Edward L. Youmans to disseminate scientific knowledge to the educated layman. The most popular magazine of science and technology. Covering the latest developments in cars, electronics, communications, tools, energy, aviation, science, space exploration and much more.",
+    "publisher": "Bonnier Corporation",
+    "ISSN": "0161-7370",
+    "yearFounded": "1872",
+    "editor": "Joe Brown",
+    "website": "https://www.popsci.com/",
+    "image": {
+      "_url": "https://dm4.imgix.net/https%3A%2F%2Fwww.discountmags.com%2Fshopimages%2Fproducts%2Fnormal%2Fextra%2Fi%2F8325-popular-science-Cover-2019-April-26-Issue.jpg?auto=format&cs=strip&h=509&lossless=1&w=387&s=cf11716d3eed3a2050f17932e8e6c6b2",
+      "_width": "331",
+      "_height": "452"
+    }
+  },
+  {
+    "title": "Flying",
+    "name":"Flying",
+    "category": "Aviation",
+    "ourPrice": "$13.99",
+    "coverPrice": "$49.79",
+    "youSave:": "$35.8(72%)",
+    "oneYearIssues": "11 issues / 1 year",
+    "twoYearIssues": "22 issues / 2 year",
+    "description": "Flying is an aviation magazine that is a primary source for pilots and others with a serious interest in aviation for the latest industry news, technology, safety, product and service information and expert opinion.Since its first publication in 1927, Flying has grown to become one of the world's most widely read aviation magazines. Its editorial staff is comprised of dedicated pilots and aircraft owners who seek to engage, educate and entertain, while showcasing new products and services, and providing expert advice on technique and air plane safety. Flying magazine targets active and future pilots, but is also a great resource for aircraft owners and aviation-oriented executives in business and general aviation markets worldwide.",
+    "publisher": "Bonnier Corporation",
+    "ISSN": "0015-4806",
+    "yearFounded": "1927",
+    "editor": "Julie Boatman Filucci",
+    "website": "https://www.flyingmag.com/",
+    "image": {
+      "_url": "https://secure.static.meredith.com/crt/store/covers/magazines/nmo/0480_l.jpg",
+      "_width": "311",
+      "_height": "414"
+    }
+  },
+
+
+
+
+  {
+    "title": "NSPE",
+    "name":"National Society of Professional Engineers",
+    "category": "Engineering",
+    "ourPrice": "$59.99",
+    "coverPrice": "$89.89",
+    "youSave:": "$29.9(33%)",
+    "oneYearIssues": "6 issues / 1 year",
+    "twoYearIssues": "12 issues / 2 year",
+    "description": "In 1934, a group of professional engineers met in New York City to establish an organization dedicated to the non-technical concerns of licensed professional engineers. The National Society of Professional Engineers stands today as the only national organization committed to addressing the professional concerns of licensed PEs across all disciplines.",
+    "publisher": "NSPE",
+    "ISSN": "0953-6639",
+    "yearFounded": "1934",
+    "Editor": "David B. Steinman",
+    "website": "https://www.nspe.org/resources/pe-magazine/recent-issues",
+    "image": {
+      "_url": "https://images-cdn.dashdigital.com/pemagazine/march_april_2020/data/articles/img/cover.jpg",
+      "_width": "284",
+      "_height": "375"
+    }
+  }
+  
+]

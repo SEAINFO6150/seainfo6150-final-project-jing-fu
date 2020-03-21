@@ -4,8 +4,14 @@ import MagList from "../MagList/MagList";
 
 import styles from './Home.module.css';
 
+import magazines from ".././data/magazines.json";
 
 const Home = () => {
+
+    const bestSellMags = magazines.slice(0,4);
+    
+    const recommendMags = magazines.slice(4,8);
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -21,9 +27,9 @@ const Home = () => {
                 </div>
             </div>
             <h3>Best Sellers:</h3>
-            <MagList/>
+            <MagList magazines={bestSellMags}/>
             <h3>Recommend for you:</h3>
-            <MagList/>
+            <MagList magazines={recommendMags}/>
             <Form />
         </div>
     )

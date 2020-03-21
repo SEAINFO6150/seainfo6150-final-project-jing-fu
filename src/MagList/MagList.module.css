@@ -1,9 +1,48 @@
 .magList {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 16px 0px;
 }
 
-img {
-  width: 60%;
+.magazine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.image {
+  height:60%;
+}
+
+.title {
+  height: 5%;
+}
+
+.priceTag {
+  height: 5%;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: brown;
+}
+
+.subscribe {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(174, 76, 67);
+  color: white;
+  font-weight: bold;
+}
+
+.subscribe:hover {
+  background-color: rgb(134, 28, 28);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
 }
