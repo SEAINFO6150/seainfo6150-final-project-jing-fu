@@ -10,17 +10,17 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.logo}>
                 <Link to={"/"}>
-                    <img className={styles.image} src="/images/nav3.png" alt="logo image" />
+                    <img className={styles.image} src="/images/nav6.png" alt="logo image" />
                 </Link>
             </div>
             <nav className={styles.nav}>
-                <Link to="/">Home</Link>
-                <Link to="/aviation">Aviation</Link>
-                <Link to="/computer">Computer</Link>
-                <Link to="/engineering">Engineering</Link>
-                <Link to="/electronics">Electronics</Link>
-                <Link to="/science">Science</Link>
-                <Link to="/about">About</Link>
+                <Link className={styles.link} to="/">Home</Link>
+                <Link className={styles.link} to="/aviation">Aviation</Link>
+                <Link className={styles.link} to="/computer">Computer</Link>
+                <Link className={styles.link} to="/engineering">Engineering</Link>
+                <Link className={styles.link} to="/electronics">Electronics</Link>
+                <Link className={styles.link} to="/science">Science</Link>
+                <Link className={styles.link} to="/about">About</Link>
             </nav>
         </div>
     )

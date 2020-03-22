@@ -12,7 +12,7 @@
 }
 
 .image {
-  width: 65%;
+  width: 55%;
 }
 
 .nav {
@@ -21,5 +21,14 @@
   justify-content: space-around;
   font-size: 1.2rem;
   flex-flow: row wrap;
-  color: white;
+  font-weight: bold;
+}
+
+.link {
+  color:black;
+}
+
+.link:hover {
+  color:white ;
+  background-color: rgb(212, 140, 93);
 }
