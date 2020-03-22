@@ -21,12 +21,17 @@
 
 .link {
   color:rgb(237, 237, 237);
+  margin: 0.3rem 0rem;
+  font-size: 0.8rem;
 }
 
 .link:hover {
   color:rgb(174, 76, 67);
 }
 
+.email{
+  font-size: 0.8rem;
+}
 
 .payment {
   width: 30%;

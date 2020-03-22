@@ -10,7 +10,7 @@ const Confirm = () => {
         <div className={styles.container}>
             <section className={styles.head}>
                 <Link to={"/"}>
-                    <img className={styles.image} src="/images/nav3.png" alt="logo image" />
+                    <img className={styles.image} src="/images/nav3.png" alt="logo" />
                 </Link>
                 <h2>Order Confirmation</h2>
             </section>

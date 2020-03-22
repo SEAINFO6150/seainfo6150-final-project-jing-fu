@@ -160,7 +160,7 @@ const Order = () => {
                 <input className={styles.cvvNum} placeholder="CVV" type="tel" data-numeric="" inputmode="numeric" id="credit-card-cvv" name="cvv_number" />
                 <span className={styles.cvvTooltip} id="cvvTooltip">
                   <div className={styles.tooltipContents}>
-                    <img src="https://secure.static.meredith.com/crt/template/cardhover1.jpg" />
+                    <img src="https://secure.static.meredith.com/crt/template/cardhover1.jpg" alt="cvv tooltip"/>
                   </div>
                 </span>
                 <small className={styles.error} id="credit-card-cvv-error"></small>

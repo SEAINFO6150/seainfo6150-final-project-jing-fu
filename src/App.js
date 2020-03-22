@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./Home/Home.jsx";
-import Bar from "./Bar/Bar.jsx";
+// import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
 import Header from "./Header/Header.jsx";
@@ -11,7 +11,7 @@ import Categroy from "./Category/Category.jsx";
 import ProductDetail from "./Detail/ProductDetail.jsx";
 import Order from "./Order/Order.jsx";
 import About from "./About/About.jsx";
-import Confirm from "./Confirm/Confirm.jsx";
+// import Confirm from "./Confirm/Confirm.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
