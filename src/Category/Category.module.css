@@ -7,13 +7,24 @@
   display: flex;
 }
 
-.left {
+.categoryNames {
   display: flex;
   flex-direction: column;
   width: 20%;
 }
 
-.right {
+.link {
+  color:rgb(99, 99, 99);
+  margin: 0.3rem 0rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.link:hover {
+  color:rgb(174, 76, 67);
+}
+
+.display {
   display: flex;
   flex-direction: column;
   width: 70%;

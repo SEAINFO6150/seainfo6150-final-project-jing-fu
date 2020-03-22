@@ -29,7 +29,7 @@ const About = () => {
         These limited-time special offers are updated regularly and often involve some of todays most popular magazines and our customers favorite titles.
         From celebrity news to sports to fashion, TechMagas.com offers subscriptions to over a thousand magazines. <br/><br/>Our broad selection of magazines assures that we have something for everyone, and our gift subscription program makes it simple to give a gift that will last all year long.
         <h5 className={styles.title}>Contact us</h5>
-        <p className={styles.desc}>You can reach us by phone at 1-800-TECHMAGS (1-800-624-2946) or you can <a href="mailto:techmagas@gmail.com">email us.</a></p>
+        <p className={styles.desc}>You can reach us by phone at 1-800-TECHMAGS (1-800-022-1310) or you can <a href="mailto:techmagas@gmail.com">email us.</a></p>
         </p>
         </article>
          </section>

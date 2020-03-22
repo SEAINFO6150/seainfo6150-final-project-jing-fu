@@ -8,9 +8,33 @@
   display: flex;
   justify-content: space-around;
 }
+
 .intro {
   width: 50%;
   margin-right: 5%;
+}
+
+.desc {
+  line-height: 25px;
+  color: rgb(99, 99, 99);
+}
+
+.learnmore {
+  /* border: .01rem solid #dadada; */
+  text-decoration: underline;
+  height: 23px;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.link{
+  font-size: .7rem;
+  font-weight: bold;
+  color: rgb(53,53,53);
+}
+
+.link:hover{
+  color: rgb(174, 76, 67);
 }
 
 .signup {

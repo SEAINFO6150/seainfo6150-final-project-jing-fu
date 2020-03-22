@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import styles from './Form.module.css';
+
 export default class Form extends Component {
   constructor(props) {
     super(props);
@@ -16,11 +18,11 @@ export default class Form extends Component {
 
   render() {
     return this.state.submittedForm ? (
-      <div>Your form entry was {this.state.submittedForm.get("myText")}</div>
+      <div className={styles.submitText}>Thank you! {this.state.submittedForm.get("email")}</div>
     ) : (
       <form onSubmit={this.onSubmit}>
-        <input type="text" name="myText" />
-        <input type="submit" value="Send it" />
+        <input className={styles.email} placeholder="Email Address *" type="email" name="email" maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$"/>
+        <input className={styles.signup} type="submit" value="Sign up" />
       </form>
     );
   }

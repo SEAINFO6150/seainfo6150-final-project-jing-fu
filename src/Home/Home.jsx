@@ -8,29 +8,30 @@ import magazines from ".././data/magazines.json";
 
 const Home = () => {
 
-    const bestSellMags = magazines.slice(0,4);
-    
-    const recommendMags = magazines.slice(4,8);
+    const bestSellMags = magazines.slice(0, 4);
+
+    const recommendMags = magazines.slice(4, 8);
 
     return (
         <div className={styles.container}>
             <div className={styles.top}>
                 <div className={styles.intro}>
-                    <p> Since 1999, TechMags.com has been the trusted online source for magazine subscriptions.
+                    <p className={styles.desc}> Since 1999, TechMags.com has been the trusted online source for technical magazine subscriptions.
                         We are proud to provide you with amazing deals and huge discounts on your favorite magazines.
-                    To place an order, visit our easy to use subscription manager. You can also reach us by phone at 1-800-TECHMAGAZINES (1-800-022-1310) or you can email us.</p>
-                    <a href="/about">learn more</a>
+                        <span className={styles.learnmore}>
+                            <a className={styles.link} href="/about">Learn More</a>
+                        </span>
+                    </p>
                 </div>
                 <div className={styles.signup}>
                     <h4>Newsletter Signup</h4>
-                    <input type="text" /> <input type="submit" value="Signup" />
+                    <Form/>
                 </div>
             </div>
             <h3>Best Sellers:</h3>
-            <MagList magazines={bestSellMags}/>
+            <MagList magazines={bestSellMags} />
             <h3>Recommend for you:</h3>
-            <MagList magazines={recommendMags}/>
-            <Form />
+            <MagList magazines={recommendMags} />
         </div>
     )
 }
