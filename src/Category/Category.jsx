@@ -3,8 +3,14 @@ import MagList from "../MagList/MagList";
 import {Link} from "react-router-dom";
 
 import styles from './Category.module.css';
+import magazines from ".././data/magazines.json";
 
-const Categroy = () => {
+
+
+const Categroy = ({categoryId}) => {
+  
+  const filtedMagList = magazines.filter( mag => mag.categoryId === categoryId);
+
   return (
     <div className={styles.container}>
       <div className={styles.main}>
@@ -17,10 +23,10 @@ const Categroy = () => {
           <Link to="/science">Science</Link>
         </div>
         <div className={styles.right}>
-         <h3>props:Category name</h3>
-         <p>props:category description</p>
+         <h3>Category name: {filtedMagList[0].categoryName}</h3>
+         {/* <p>props:category description</p> */}
          <div className={styles.categroylist}>
-         <MagList/>
+         <MagList magazines={filtedMagList}/>
          </div>
         </div>
       </div>

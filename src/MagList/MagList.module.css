@@ -1,14 +1,15 @@
 .magList {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 16px 0px;
 }
 
 .magazine {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 20%;
+  justify-content: space-between;
+  width:23%;
 }
 
 .image {
@@ -32,13 +33,18 @@
 
 .subscribe {
   height: 10%;
+  
+}
+
+.submit {
   width: 100%;
   background-color: rgb(174, 76, 67);
   color: white;
   font-weight: bold;
 }
 
-.subscribe:hover {
+
+.submit:hover {
   background-color: rgb(134, 28, 28);
 }
 

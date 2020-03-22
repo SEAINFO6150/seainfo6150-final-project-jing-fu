@@ -32,20 +32,32 @@ function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/aviation" exact component={Categroy} />
-        <Route path="/computer" exact component={ProductDetail} />
+        {/* <Route path="/aviation" exact component={Categroy} /> */}
+        {/* <Route path="/computer" exact component={ProductDetail} />
         <Route path="/engineering" exact component={Order} />
         <Route path="/electronics" exact component={Confirm} />
-        <Route path="/science" exact component={Categroy} />
+        <Route path="/science" exact component={Categroy} /> */}
+        <Route path="/order" exact component={Order} />
         <Route path="/about" exact component={About} />
         {/* passing parameters via a route path */}
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/:categoryId"
           exact
           render={({ match }) => (
             // getting the parameters from the url and passing
             // down to the component as props
-            <Bar
+            <Categroy
+              categoryId={match.params.categoryId}
+            />
+          )}
+        />
+        <Route
+          path="/:categoryId/:productId"
+          exact
+          render={({ match }) => (
+            // getting the parameters from the url and passing
+            // down to the component as props
+            <ProductDetail
               categoryId={match.params.categoryId}
               productId={match.params.productId}
             />
