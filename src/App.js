@@ -12,9 +12,10 @@ import ProductDetail from "./Detail/ProductDetail.jsx";
 import Order from "./Order/Order.jsx";
 import About from "./About/About.jsx";
 // import Confirm from "./Confirm/Confirm.jsx";
+import magazines from "./data/magazines.json";
 
 // here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
+// to see how this content is passed doßwn to the components via props
 const externalContent = {
   id: "article-1",
   title: "An Article",
@@ -26,7 +27,7 @@ function App() {
   return (
     <Router>
       <header>
-      <Header/>
+        <Header />
       </header>
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -37,7 +38,7 @@ function App() {
         <Route path="/engineering" exact component={Order} />
         <Route path="/electronics" exact component={Confirm} />
         <Route path="/science" exact component={Categroy} /> */}
-        <Route path="/order" exact component={Order} />
+        {/* <Route path="/order" exact component={Order} /> */}
         <Route path="/about" exact component={About} />
         {/* passing parameters via a route path */}
         <Route
@@ -48,6 +49,17 @@ function App() {
             // down to the component as props
             <Categroy
               categoryId={match.params.categoryId}
+            />
+          )}
+        />
+        <Route
+          path="/order/:productId"
+          exact
+          render={({ match }) => (
+            <Order
+              magazine={
+                magazines.find(magazine => magazine.productId === match.params.productId)
+              }
             />
           )}
         />
@@ -63,6 +75,7 @@ function App() {
             />
           )}
         />
+
         <Route
           path="/baz"
           exact
@@ -71,7 +84,7 @@ function App() {
         <Route component={Error} />
       </Switch>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </Router>
   );

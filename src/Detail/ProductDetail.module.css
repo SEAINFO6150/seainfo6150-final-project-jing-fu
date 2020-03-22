@@ -79,6 +79,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0px 10% 0px 10%;
+  color:rgb(53, 53, 53);
 }
 
 .detail {
@@ -90,6 +91,14 @@
 td {
   vertical-align: center;
   height: 30px;
+}
+
+.website {
+  color:rgb(53, 53, 53);
+}
+
+.website:hover {
+  color:rgb(174, 76, 67);
 }
 
 .description {
