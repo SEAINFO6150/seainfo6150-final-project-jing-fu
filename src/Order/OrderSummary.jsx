@@ -62,7 +62,7 @@ const OrderSummary = ({magazine}) => {
                 </tr>
               </tfoot>
             </table>
-            <div className={styles.line}><hr /></div>
+            <hr />
           </section>
         </div>
       </section>

@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.top}>
+            <section className={styles.top}>
                 <div className={styles.intro}>
                     <p className={styles.desc}> Since 1999, TechMags.com has been the trusted online source for technical magazine subscriptions.
                         We are proud to provide you with amazing deals and huge discounts on your favorite magazines.
@@ -27,11 +27,18 @@ const Home = () => {
                     <h4>Newsletter Signup</h4>
                     <Form/>
                 </div>
-            </div>
+            </section>
+            <section>
             <h3>Best Sellers:</h3>
+            <hr/>
             <MagList magazines={bestSellMags} />
+            </section>
+            <section>
             <h3>Recommend for you:</h3>
+            <hr/>
             <MagList magazines={recommendMags} />
+            </section>
+            
         </div>
     )
 }

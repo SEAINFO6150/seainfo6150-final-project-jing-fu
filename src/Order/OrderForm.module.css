@@ -184,9 +184,6 @@ select {
   color: rgb(53, 53, 53);
 }
 
-/* .tab:hover {
-  background-color: #7b7979;
-} */
 
 .cardNumber {
   grid-column: 1 / span 2;
@@ -238,7 +235,6 @@ select {
 
 .cvvicon {
   width: 15%;
-  /* height: 100%; */
   align-items: center;
 }
 
@@ -383,10 +379,6 @@ select {
   font-weight: bold;
   border-bottom:1px solid rgb(123, 123, 123);
   margin-bottom: 2rem;
-}
-
-.line {
-  width: 100%;
 }
 
 .submitOrder {

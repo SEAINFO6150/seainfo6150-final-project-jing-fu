@@ -1,11 +1,16 @@
 import React from 'react'
 
 import OrderSummary from './OrderSummary';
+import Error from '../Error/Error';
 
 import styles from './OrderForm.module.css';
 
 
 const OrderForm = ({ magazine,onSubmit }) => {
+
+  if (magazine == null) {
+    return <Error/>;
+  }
 
   return (
     <form className={styles.form} onSubmit={onSubmit}>
@@ -112,7 +117,7 @@ const OrderForm = ({ magazine,onSubmit }) => {
                 <li className={styles.tab} role="presentation"><a href="https://www.paypal.com/us/signin" role="tab">PayPal</a></li>
               </ul>
               <div className={styles.cardNumber}>
-                <input className={styles.cardNum} type="tel" placeholder="Credit card number" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" inputmode="numeric" id="credit-card-number" name="card_number" />
+                <input className={styles.cardNum} type="tel" placeholder="Credit card number" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" inputmode="numeric"/>
               </div>
               <div className={styles.cardLogo}><img className={styles.creditCard} src="/images/card-logo.jpg" alt="card logo" /></div>
               <div className={styles.expMonth}>
@@ -153,7 +158,7 @@ const OrderForm = ({ magazine,onSubmit }) => {
                 <div className={styles.cvvicon}>
                   <img src="/images/cvv-icon.png" alt="cvv icon" />
                 </div>
-                <span className={styles.cvvTooltip} id="cvvTooltip">
+                <span className={styles.cvvTooltip} >
                   <div className={styles.tooltipContents}>
                     <img src="https://www.anthonytravel.com/files/security_code_sample.jpg" alt="cvv tooltip" />
                   </div>
