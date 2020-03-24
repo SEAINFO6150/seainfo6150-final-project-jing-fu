@@ -16,28 +16,22 @@ const OrderForm = ({ magazine,onSubmit }) => {
             <h3>Shipping</h3>
             <div className={styles.ship}>
               <div className={styles.emailAddress}>
-                <input className={styles.email} type="email" id="email" name="Email Address" placeholder="Email Address" required maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$" />
-                <small className={styles.error}>This field is required. Please enter a valid email address.  For example email@website.com.</small>
+                <input className={styles.email} type="email" placeholder="Email Address" required maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$" />
               </div>
               <div className={styles.firstName}>
-                <input className={styles.first} type="text" name="First Name" placeholder="First Name" required pattern="^[a-zA-Z ]+$" />
-                <small className={styles.error}>This field is required. Please use only letters.</small>
+                <input className={styles.first} type="text" placeholder="First Name" required pattern="^[a-zA-Z ]+$" />
               </div>
               <div className={styles.lastName} >
-                <input className={styles.last} type="text" name="Last Name" placeholder="Last Name" required pattern="^[a-zA-Z ]{1,14}[a-zA-Z]$" />
-                <small className={styles.error}>This field is required. Please use only letters.</small>
+                <input className={styles.last} type="text" placeholder="Last Name" required pattern="^[a-zA-Z ]{1,14}[a-zA-Z]$" />
               </div>
               <div className={styles.firstAddress}>
                 <input className={styles.address1} type="text" placeholder="Address 1" maxlength="27" min="2" required pattern="^[a-zA-Z0-9 \.\-\&amp;\/]{2,27}$" />
-                <small className={styles.error}>This field is required. Please use only letters, numbers or the characters.</small>
               </div>
               <div className={styles.secondAddress}>
                 <input className={styles.address2} type="text" placeholder="Address 2" maxlength="27" pattern="^[a-zA-Z0-9 #\.\-\&amp;\/]{0,27}$" />
-                <small className={styles.error}>Please use only letters, numbers or the characters .</small>
               </div>
               <div className={styles.cityAddress}>
                 <input className={styles.city} type="text" placeholder="City" maxlength="27" min="2" required pattern="^[a-zA-Z ]{2,27}$" />
-                <small className={styles.error}>This field is required. Please use only letters.</small>
               </div>
               <div className={styles.selectState}>
                 <select className={styles.state} nodefault="false" required >
@@ -101,14 +95,12 @@ const OrderForm = ({ magazine,onSubmit }) => {
                   <option value="PR">Puerto Rico</option>
                   <option value="VI">Virgin Islands</option>
                 </select>
-                <small className={styles.error}>This field is required.</small>
               </div>
               <div className={styles.zipNum}>
                 <input className={styles.zipcode} type="tel" placeholder="Zip Code" maxlength="5" required pattern="^[0-9]{5}$" inputmode="numeric" />
-                <small className={styles.error}>This field is required. Please enter a valid U.S. zip code.</small>
               </div>
               <div className={styles.telephone}>
-                <input className={styles.tel} type="text" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required data-validation-default-message="Please enter a valid telephone number" placeholder="(000) 000-0000" maxlength="14" aria-required="true" aria-invalid="true" />
+                <input className={styles.tel} type="tel" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required data-validation-default-message="Please enter a valid telephone number" placeholder="(000) 000-0000" maxlength="14" aria-required="true" aria-invalid="true" />
               </div>
             </div>
           </section>
@@ -120,12 +112,11 @@ const OrderForm = ({ magazine,onSubmit }) => {
                 <li className={styles.tab} role="presentation"><a href="https://www.paypal.com/us/signin" role="tab">PayPal</a></li>
               </ul>
               <div className={styles.cardNumber}>
-                <input className={styles.cardNum} type="tel" placeholder="Credit card number" required data-numeric="" inputmode="numeric" id="credit-card-number" name="card_number" />
-                <small id="credit-card-number-error" className={styles.error}></small>
+                <input className={styles.cardNum} type="tel" placeholder="Credit card number" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" inputmode="numeric" id="credit-card-number" name="card_number" />
               </div>
               <div className={styles.cardLogo}><img className={styles.creditCard} src="/images/card-logo.jpg" alt="card logo" /></div>
               <div className={styles.expMonth}>
-                <select className={styles.month} required id="credit-card-expiration-month" name="creditCardExpireMonth" data-abide-validator="creditCardExpireDate">
+                <select className={styles.month} required >
                   <option value="">Month</option>
                   <option value="01">01</option>
                   <option value="02">02</option>
@@ -142,7 +133,7 @@ const OrderForm = ({ magazine,onSubmit }) => {
                 </select>
               </div>
               <div className={styles.expYear}>
-                <select className={styles.year} required id="credit-card-expiration-year" name="creditCardExpireYear" data-abide-validator="creditCardExpireDate">
+                <select className={styles.year} required >
                   <option value="">Year</option>
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
@@ -156,26 +147,27 @@ const OrderForm = ({ magazine,onSubmit }) => {
                   <option value="2029">2029</option>
                   <option value="2030">2030</option>
                 </select>
-                <small className={styles.error} id="credit-card-expiration-error"></small>
               </div>
               <div className={styles.cvv}>
-                <input className={styles.cvvNum} placeholder="CVV" required type="tel" data-numeric="" inputmode="numeric" id="credit-card-cvv" name="cvv_number" />
+                <input className={styles.cvvNum} placeholder="CVV" required type="tel" inputmode="numeric" pattern="^[0-9]{3,4}$"/>
+                <div className={styles.cvvicon}>
+                  <img src="/images/cvv-icon.png" alt="cvv icon" />
+                </div>
                 <span className={styles.cvvTooltip} id="cvvTooltip">
                   <div className={styles.tooltipContents}>
-                    <img src="https://secure.static.meredith.com/crt/template/cardhover1.jpg" alt="cvv tooltip" />
+                    <img src="https://www.anthonytravel.com/files/security_code_sample.jpg" alt="cvv tooltip" />
                   </div>
-                </span>
-                <small className={styles.error} id="credit-card-cvv-error"></small>
+              </span>
               </div>
             </div>
             <div className={styles.giftOptions}>
               <div className={styles.giftIcon}>gift options</div>
               <label className={styles.gift1} for="giftOnly">
-                <input className={styles.giftOnly} type="checkbox" name="giftOption" id="giftOnly" value="giftOnly" aria-invalid="false" />
+                <input className={styles.giftOnly} type="checkbox"/>
                 <p className={styles.giftText}>I would like to give this as a gift.</p>
               </label>
               <label className={styles.gift2} for="giftAndSubscription">
-                <input className={styles.giftSubscribe} type="checkbox" name="giftOption" id="giftAndSubscription" value="giftAndSubscription" aria-invalid="false" />
+                <input className={styles.giftSubscribe} type="checkbox"/>
                 <p className={styles.giftText}>I would like to give this as a gift and subscribe myself.</p>
               </label>
             </div>
