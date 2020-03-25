@@ -11,8 +11,8 @@ import magazines from ".././data/magazines.json";
 
 const Categroy = ({ categoryId }) => {
 
-  const filtedMagList = magazines.filter(mag => mag.categoryId === categoryId);
-
+  const filtedMagList = (categoryId === 'all') ? magazines : magazines.filter(mag => mag.categoryId === categoryId);
+  
   if (filtedMagList == null || filtedMagList.length == 0) {
     return <Error />;
   }
@@ -24,6 +24,7 @@ const Categroy = ({ categoryId }) => {
           <div className={styles.title}>
             <h3>Categroies</h3>
           </div>
+          <Link className={styles.link} to="/category/all">All</Link>
           <Link className={styles.link} to="/category/avia-001">Aviation</Link>
           <Link className={styles.link} to="/category/comp-001">Computer</Link>
           <Link className={styles.link} to="/category/eng-001">Engineering</Link>

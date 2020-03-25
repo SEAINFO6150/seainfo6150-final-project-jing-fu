@@ -27,7 +27,7 @@ const Footer = () => {
         <section className={styles.resources}>
           <h5>Resources</h5>
           <a className={styles.link} href="https://www.mixonline.com/">Mix</a>
-          <a className={styles.link} href="https://www.codemag.com">CODE</a>
+          <a className={styles.link} href="https://www.codemag.com">Code</a>
           <a className={styles.link} href="https://www.wired.com/">Wired</a>
           <a className={styles.link} href="https://www.discovermagazine.com/">Discover</a>
           <a className={styles.link} href="https://astronomy.com/">Astronomy</a>
