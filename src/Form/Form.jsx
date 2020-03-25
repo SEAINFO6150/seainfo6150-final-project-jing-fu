@@ -18,7 +18,7 @@ export default class Form extends Component {
 
   render() {
     return this.state.submittedForm ? (
-      <div className={styles.submitText}>Thank you! {this.state.submittedForm.get("email")}</div>
+      <div className={styles.submitText}>Thanks for your subscription! {this.state.submittedForm.get("email")}.</div>
     ) : (
       <form onSubmit={this.onSubmit}>
         <input className={styles.email} placeholder="Email Address *" required type="email" name="email" maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$"/>

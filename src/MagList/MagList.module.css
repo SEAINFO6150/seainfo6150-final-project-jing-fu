@@ -1,19 +1,21 @@
 .magList {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   margin: 16px 0px;
+  gap: 15px 30px;
+  min-width: 400px;
 }
 
 .magazine {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width:23%;
+  height: 100%;
 }
 
 .image {
-  height:60%;
+  height:65%;
 }
 
 .title {
@@ -33,7 +35,6 @@
 
 .subscribe {
   height: 10%;
-  
 }
 
 .submit {
@@ -51,4 +52,5 @@
 .img {
   width: 100%;
   height: 100%;
+  border-radius: .67rem;
 }
