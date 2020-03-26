@@ -35,3 +35,12 @@
   flex-direction: column;
   width: 70%;
 }
+
+@media (max-width: 600px) {
+  .categoryNames {
+      display: none;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}

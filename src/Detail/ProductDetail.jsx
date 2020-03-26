@@ -21,7 +21,7 @@ const ProductDetail = ({ categoryId, productId }) => {
           </div>
           <div className={styles.price}>
             <p className={styles.emphasis}>Our price: ${magazine.ourPrice}</p>
-            <p>Cover price: $<span className={styles.deletePrice}>{magazine.coverPrice}</span></p>
+            <p>Cover price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
             <p>You Saved: {magazine.youSave}</p>
             {magazine.oneYearIssues}
           </div>

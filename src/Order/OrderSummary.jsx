@@ -9,8 +9,7 @@ const OrderSummary = ({magazine}) => {
   const total = (Number(magazine.ourPrice) * 1.1).toFixed(2);
 
     return (
-        <div>
-        <section className={styles.summary}>
+        <div className={styles.summary}>
         <h2 className={styles.title}>Order Summary</h2>
         <div className={styles.orderDetails}>
           <section className={styles.imageHolder}>
@@ -65,8 +64,7 @@ const OrderSummary = ({magazine}) => {
             <hr />
           </section>
         </div>
-      </section>
-        </div>
+      </div>
     )
 }
 

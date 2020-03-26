@@ -5,13 +5,25 @@
 }
 
 .top {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 30px;
+}
+
+@media (min-width: 800px) {
+  .top {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .intro {
-  width: 50%;
   margin-right: 5%;
+  min-width: 300px;
+}
+
+.signup {
+  min-width: 300px;
 }
 
 .desc {
@@ -20,7 +32,6 @@
 }
 
 .learnmore {
-  /* border: .01rem solid #dadada; */
   text-decoration: underline;
   height: 23px;
   text-align: center;
@@ -37,6 +48,3 @@
   color: rgb(174, 76, 67);
 }
 
-.signup {
-  width: 50%;
-}
