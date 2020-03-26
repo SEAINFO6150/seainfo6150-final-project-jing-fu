@@ -1,6 +1,5 @@
 .container {
-  margin-left: 15%;
-  margin-right: 8%;
+  margin: 2rem 8% 0rem 15%;
   background-color: rgb(41, 44, 51);
   color: rgb(153, 153, 153);
   font-family: Arial, Helvetica, sans-serif;

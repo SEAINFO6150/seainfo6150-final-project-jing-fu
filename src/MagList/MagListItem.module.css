@@ -17,7 +17,7 @@
 }
 
 .priceTag {
-  height: 5%;
+  height: 10%;
   margin-bottom: 1rem;
 }
 
@@ -62,7 +62,8 @@
 
 @media (min-width:600px) and (max-width: 900px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
   }
   span {
     font-size: 1.2rem;
@@ -76,8 +77,9 @@
 @media (min-width: 900px) and (max-width: 1200px){
   .title {
     font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
   span {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
