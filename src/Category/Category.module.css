@@ -14,7 +14,6 @@
 }
 
 .title {
-  border-bottom: 1px solid rgb(99, 99, 99) ;
   width: 80%;
   margin-bottom: 1.5rem;
 }
@@ -34,6 +33,18 @@
   display: flex;
   flex-direction: column;
   width: 70%;
+}
+
+.categroyTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgb(99, 99, 99) ;
+}
+
+
+.filter {
+  margin-left: 90%;
 }
 
 @media (max-width: 600px) {

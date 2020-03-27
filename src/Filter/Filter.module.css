@@ -1,0 +1,10 @@
+
+.sortBy {
+  height: 2.2rem;
+  border: .05rem solid #dadada;
+  outline: none;
+  margin-bottom: 0.5rem;
+  color:rgba(89, 89, 89);
+  background-color: white;
+  padding-left: 1rem;
+}
