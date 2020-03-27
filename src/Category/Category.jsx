@@ -29,9 +29,6 @@ export default class Categroy extends Component {
       let filtered;
 
       switch(selectType) {
-        case "bestSeller":
-          filtered = magazines.slice(0,4);
-          break;
         case "asc":
           filtered = this.onSortAtoZ(magazines);
           break;
@@ -90,7 +87,7 @@ export default class Categroy extends Component {
       return <Error />;
     }
 
-    const displayMagList = this.state.selectFilterMagList || filtedMagList;
+    const displayMagList = filtedMagList || this.state.selectFilterMagList;
 
     const categoryName = (this.props.categoryId === 'all') ? '' : filtedMagList[0].categoryName;
 
@@ -99,7 +96,7 @@ export default class Categroy extends Component {
         <div className={styles.main}>
           <section className={styles.categoryNames}>
             <div className={styles.title}>
-              <h3>Categroies</h3>
+              <h3>Categories</h3>
               <hr />
             </div>
             <Link className={styles.link} to="/category/all">All</Link>
