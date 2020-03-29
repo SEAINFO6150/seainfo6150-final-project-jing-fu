@@ -1,6 +1,5 @@
 .container {
   margin-left: 15%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -16,6 +15,7 @@
 .title {
   width: 80%;
   margin-bottom: 1.5rem;
+  margin-right: 1rem;
 }
 
 .link {
@@ -38,7 +38,7 @@
 .categroyTitle {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   border-bottom: 1px solid rgb(99, 99, 99) ;
 }
 

@@ -27,7 +27,7 @@ const ProductDetail = ({ categoryId, productId }) => {
           </div>
           <div className={styles.submit}>
             <Link to={`/order/${magazine.productId}`}>
-            <input className={styles.checkout} type="submit" value="Check out" />
+              <input className={styles.checkout} type="submit" value="Check Out" />
             </Link>
           </div>
         </section>

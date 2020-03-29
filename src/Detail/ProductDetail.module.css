@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -29,7 +28,7 @@
     width: 60%;
   }
   .checkout {
-    height: 3.5rem;
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -41,6 +40,10 @@
   }
   .productPrice {
     width: 40%;
+  }
+  .checkout {
+    height: 2.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -119,7 +122,6 @@
 .productDesc {
   display: flex;
   justify-content: space-between;
-  /* margin: 0px 10% 0px 10%; */
   color:rgb(53, 53, 53);
 }
 

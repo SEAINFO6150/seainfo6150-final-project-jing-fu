@@ -3,7 +3,6 @@
   flex-direction: column;
   margin-left:15%;
   margin-right: 10%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .checkout {
@@ -304,7 +303,7 @@ select {
 .summary {
   margin: 2rem 0rem;
   height: 40%;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 
 .orderDetails {
@@ -323,6 +322,19 @@ select {
 .priceDetail {
   width: 30%;
   margin-top: 5rem;
+}
+
+.priceTable {
+  text-align: left;
+  width: 100%;
+}
+
+.firstCol {
+  width: 85%;
+}
+
+.secCol {
+  width: 15%;
 }
 
 .titleLink {
@@ -348,11 +360,11 @@ select {
   font-weight: bold;
   border-bottom:1px solid rgb(123, 123, 123);
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .submitOrder {
   margin-bottom: 2rem;
-  margin-right: 10%;
   width: 28%;
   background-color: rgb(174, 76, 67);
   color: white;
@@ -386,23 +398,33 @@ a:hover {
     justify-content: space-between;
   }
   .shipping {
-    width: 60%;
+    width: 90%;
   }
   .billing {
-    width: 60%;
+    width: 100%;
   }
   .imageHolder {
-    width: 60%;
+    width: 100%;
   }
   .productDetail {
     width: 100%;
   }
   .priceDetail {
-    width: 60%;
+    width: 100%;
   }
   .submitOrder {
-    width: 60%;
+    width: 90%;
     float: left;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  input {
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+  select {
+    height: 2.4rem;
+    font-size: 1rem
   }
 }
 
@@ -412,5 +434,10 @@ a:hover {
   }
   .billing {
     width: 45%;
+  }
+  .submitOrder {
+    width: 40%;
+    height: 2.4rem;
+    font-size: 1.2rem;
   }
 }
