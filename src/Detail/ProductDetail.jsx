@@ -34,30 +34,33 @@ const ProductDetail = ({ categoryId, productId }) => {
       </section>
       <section className={styles.productDesc}>
         <table className={styles.detail}>
-          <tr>
-            <th>Product</th>
-            <th>Detail</th>
-          </tr>
-          <tr>
-            <td>Publisher:</td>
-            <td>{magazine.publisher}</td>
-          </tr>
-          <tr>
-            <td>ISSN:</td>
-            <td>{magazine.ISSN}</td>
-          </tr>
-          <tr>
-            <td>Year Founded:</td>
-            <td>{magazine.yearFounded}</td>
-          </tr>
-          <tr>
-            <td>Editor:</td>
-            <td>{magazine.editor}</td>
-          </tr>
-          <tr>
-            <td>Learn More: </td>
-            <td><a className={styles.website} href={magazine.website}>{magazine.website}</a></td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Product</th>
+              <th>Detail</th>
+            </tr>
+            <tr>
+              <td>Publisher:</td>
+              <td>{magazine.publisher}</td>
+            </tr>
+            <tr>
+              <td>ISSN:</td>
+              <td>{magazine.ISSN}</td>
+            </tr>
+            <tr>
+              <td>Year Founded:</td>
+              <td>{magazine.yearFounded}</td>
+            </tr>
+            <tr>
+              <td>Editor:</td>
+              <td>{magazine.editor}</td>
+            </tr>
+            <tr>
+              <td>Learn More: </td>
+              <td><a className={styles.website} href={magazine.website}>{magazine.website}</a></td>
+            </tr>
+          </tbody>
+
         </table>
         <section className={styles.description}>
           <h4>Product Description:</h4>

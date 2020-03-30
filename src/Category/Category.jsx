@@ -41,6 +41,8 @@ export default class Categroy extends Component {
         case "highToLow":
           filtered = this.onSortHighToLow(magazines);
           break;
+        default:
+          break;
       }
 
       this.setState({
@@ -83,7 +85,7 @@ export default class Categroy extends Component {
 
     const filtedMagList = (this.props.categoryId === 'all') ? magazines : magazines.filter(mag => mag.categoryId === this.props.categoryId);
 
-    if (filtedMagList == null || filtedMagList.length == 0) {
+    if (filtedMagList === null || filtedMagList.length === 0) {
       return <Error />;
     }
 

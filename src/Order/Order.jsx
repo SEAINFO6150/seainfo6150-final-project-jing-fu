@@ -22,7 +22,7 @@ export default class Order extends Component {
     return (
       <div >
         {this.state.submittedForm ? (
-          <OrderConfirmation magazine={this.props.magazine} />
+          <OrderConfirmation magazine={this.props.magazine} submittedForm={this.state.submittedForm}/>
         ) : (
           <OrderForm onSubmit={this.onSubmit} magazine={this.props.magazine}/>
         )}
