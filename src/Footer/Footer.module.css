@@ -1,5 +1,6 @@
 .container {
-  margin: 2rem 8% 0rem 15%;
+  width: 80%;
+  margin: 2rem auto 0 auto;
   background-color: rgb(41, 44, 51);
   color: rgb(153, 153, 153);
 }
@@ -7,8 +8,8 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-  padding:2rem 10%;
+  column-gap: normal;
+  padding:2rem 0rem 2rem 10%;
 }
 
 
@@ -22,13 +23,13 @@
 .categories {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .resources {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .link {
