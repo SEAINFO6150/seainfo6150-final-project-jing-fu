@@ -17,7 +17,7 @@ const Confirm = ({ magazine, submittedForm }) => {
                 <h2>Order Confirmation</h2>
             </section>
             <section className={styles.content}>
-                <h6>Hello {submittedForm.get('firstname')}</h6>
+                <h4>Hello {submittedForm.get('firstname')}</h4>
                 <p>Thanks you for shopping with us. We'll send a confirmation when your items ships.<br/>
                 We hope to see you again soon.<br/>
                 TechMags.com

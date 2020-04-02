@@ -39,3 +39,14 @@
   width: 85%;
 }
 
+@media (max-width: 600px) {
+  .image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .image {
+    width: 50%;
+  }
+}

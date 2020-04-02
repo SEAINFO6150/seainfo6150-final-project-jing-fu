@@ -12,9 +12,9 @@ const About = () => {
       <section className={styles.companyDesc}>
         <h4 className={styles.title}>About TechMags.com</h4>
         <p className={styles.desc}><span className={styles.initial}>S</span>ince 1999, TechMags.com has been the trusted online source for technical magazine subscriptions. We are proud to provide you with amazing deals and huge discounts on your favorite magazines.
-        Subscription prices are updated daily to reflect our lowest price approved by the publishers. A long-standing personal relationship with each publisher allows us to offer you great deals on your favorite subscriptions and to deliver prompt and reliable service.<br />
-          <span className={styles.initial}>O</span>ur team is dedicated to providing you with the lowest prices on top magazines, and we work closely with publishers to make even bigger savings available to you.
-        <ul>
+        Subscription prices are updated daily to reflect our lowest price approved by the publishers. A long-standing personal relationship with each publisher allows us to offer you great deals on your favorite subscriptions and to deliver prompt and reliable service.<br /><br />
+          <span className={styles.initial}>O</span>ur team is dedicated to providing you with the lowest prices on top magazines, and we work closely with publishers to make even bigger savings available to you. </p>
+        <ul className={styles.desc}>
             <li>
               <strong>The absolute lowest prices: </strong>We already offer the lowest, prices for all our magazines on our site, but that doesn’t mean we ever stop negotiating to get even lower prices for you.
           </li>
@@ -25,7 +25,7 @@ const About = () => {
               <strong>Crystal-clear policies: </strong>Some surprises are good, but surprises that cost you extra money deﬁnitely aren’t. That’s why we promise to never charge any extra or hidden fees and to not, unless you opt in, automatically renew your subscription.
           </li>
           </ul>
-          <span className={styles.initial}>T</span>hese limited-time special offers are updated regularly and often involve some of today's most popular magazines and our customers' favorite titles.
+          <p className={styles.desc}><span className={styles.initial}>T</span>hese limited-time special offers are updated regularly and often involve some of today's most popular magazines and our customers' favorite titles.
         From celebrity news to sports to fashion, TechMagas.com offers subscriptions to over a thousand magazines. <br /><br />Our broad selection of magazines assures that we have something for everyone, and our gift subscription program makes it simple to give a gift that will last all year long.
         </p>
       </section>
