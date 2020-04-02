@@ -1,8 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin-left:15%;
-  margin-right: 10%;
+  width: 70%;
+  margin:2rem auto;
 }
 
 .checkout {
@@ -293,13 +293,13 @@ select {
 }
 
 .title {
-  margin-left: 45%;
+  text-align: center;
 }
 
 /* section summery */
 
 .summary {
-  margin: 2rem 0rem;
+  margin: 2rem auto;
   height: 40%;
   margin-right: 10%;
 }
@@ -314,11 +314,11 @@ select {
 }
 
 .productDetail {
-  width: 30%;
+  width: 25%;
 }
 
 .priceDetail {
-  width: 30%;
+  width: 35%;
   margin-top: 5rem;
 }
 
@@ -362,13 +362,12 @@ select {
 }
 
 .submitOrder {
-  margin-bottom: 2rem;
-  width: 28%;
+  margin: 2rem 10% 0 0;
+  width: 30%;
   background-color: rgb(174, 76, 67);
   color: white;
   font-weight: bold;
   float: right;
-  margin-right: 10%;
 }
 
 .submitOrder:hover {

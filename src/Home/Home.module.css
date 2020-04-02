@@ -1,6 +1,6 @@
 .container {
-  margin-left: 15%;
-  margin-right: 8%;
+  width: 80%;
+  margin:2rem auto;
 }
 
 .top {
@@ -32,13 +32,12 @@
 
 .learnmore {
   text-decoration: underline;
-  height: 23px;
   text-align: center;
   margin-left: 1rem;
 }
 
 .link{
-  font-size: .7rem;
+  font-size: .8rem;
   font-weight: bold;
   color: rgb(53,53,53);
 }

@@ -1,5 +1,6 @@
 .container {
-  margin-left: 15%;
+  width: 80%;
+  margin:2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
