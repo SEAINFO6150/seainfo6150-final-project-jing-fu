@@ -27,19 +27,26 @@
 }
 
 .subscribe {
-  height: 10%;
+  width: 90%;
+  text-align: center;
+  vertical-align: bottom;
+  padding:.7rem;
+  border-radius: 5px;
+  background-color: rgb(174, 76, 67);
+  font-size:0.9rem;
+}
+
+
+.subscribe:hover {
+  background-color: rgb(134, 28, 28);
 }
 
 .submit {
-  width: 100%;
-  background-color: rgb(174, 76, 67);
   color: white;
   font-weight: bold;
+  text-decoration:none;
 }
 
-.submit:hover {
-  background-color: rgb(134, 28, 28);
-}
 
 .img {
   width: 100%;

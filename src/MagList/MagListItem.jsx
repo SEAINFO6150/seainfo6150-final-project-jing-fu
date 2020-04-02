@@ -7,19 +7,21 @@ const MagListItem = ({ magazine }) => {
 
   return (
     <div className={styles.magazine}>
-      <section className={styles.image}>
+      <div className={styles.image}>
         <Link to={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>
           <img className={styles.img} src={magazine.image._url} alt={magazine.title} />
         </Link>
-      </section>
+      </div>
         <p className={styles.title}>{magazine.title}</p>
-      <section className={styles.priceTag}>
+      <div className={styles.priceTag}>
         <span>{magazine.oneYearIssues}</span> :
         <span className={styles.price}>  {magazine.ourPrice}</span>
-      </section>
-      <Link className={styles.subscribe} to={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>
-        <input className={styles.submit} type="submit" value="Subscribe" />
-      </Link>      
+      </div>
+      <div className={styles.subscribe}>
+      <Link className={styles.submit} to={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>
+        Subscribe
+      </Link>  
+      </div>
     </div>
   )
 }

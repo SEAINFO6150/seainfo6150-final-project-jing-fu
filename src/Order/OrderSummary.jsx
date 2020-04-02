@@ -12,12 +12,12 @@ const OrderSummary = ({ magazine }) => {
     <div className={styles.summary}>
       <h2 className={styles.title}>Order Summary</h2>
       <div className={styles.orderDetails}>
-        <section className={styles.imageHolder}>
+        <div className={styles.imageHolder}>
           <a href={`/${magazine.categoryId}/${magazine.productId}`}>
             <img className={styles.productPic} src={magazine.image._url} alt={magazine.title} />
           </a>
-        </section>
-        <section className={styles.productDetail}>
+        </div>
+        <div className={styles.productDetail}>
           <div>
             <h3>
               <a className={styles.titleLink} href={`/${magazine.categoryId}/${magazine.productId}`} >
@@ -33,8 +33,8 @@ const OrderSummary = ({ magazine }) => {
               </p>
             </div>
           </div>
-        </section>
-        <section className={styles.priceDetail}>
+        </div>
+        <div className={styles.priceDetail}>
           <table className={styles.priceTable}>
             <tbody>
               <tr>
@@ -62,7 +62,7 @@ const OrderSummary = ({ magazine }) => {
             </tfoot>
           </table>
           <hr />
-        </section>
+        </div>
       </div>
     </div>
   )
