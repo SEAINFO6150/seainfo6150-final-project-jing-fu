@@ -11,14 +11,12 @@ const ProductDetail = ({ categoryId, productId }) => {
 
   return (
     <div className={styles.container}>
-      <section className={styles.main}>
-        <section className={styles.productImage}>
+      <div className={styles.main}>
+        <div className={styles.productImage}>
           <img className={styles.img} src={magazine.image._url} alt={magazine.title} />
-        </section>
+        </div>
         <section className={styles.productPrice}>
-          <div className={styles.title}>
-            <h2>{magazine.name}</h2>
-          </div>
+          <h2 className={styles.title}>{magazine.name}</h2>
           <div className={styles.price}>
             <p className={styles.emphasis}>Our price: ${magazine.ourPrice}</p>
             <p>Cover price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
@@ -26,13 +24,13 @@ const ProductDetail = ({ categoryId, productId }) => {
             {magazine.oneYearIssues}
           </div>
           <div className={styles.submit}>
-            <Link to={`/order/${magazine.productId}`}>
-              <input className={styles.checkout} type="submit" value="Check Out" />
+            <Link className={styles.checkout} to={`/order/${magazine.productId}`}>
+              Check Out
             </Link>
           </div>
         </section>
-      </section>
-      <section className={styles.productDesc}>
+      </div>
+      <div className={styles.productDesc}>
         <table className={styles.detail}>
           <tbody>
             <tr>
@@ -60,14 +58,12 @@ const ProductDetail = ({ categoryId, productId }) => {
               <td><a className={styles.website} href={magazine.website}>{magazine.website}</a></td>
             </tr>
           </tbody>
-
         </table>
         <section className={styles.description}>
           <h4>Product Description:</h4>
-          <article><p className={styles.article}>{magazine.description}</p></article>
+          <p className={styles.article}>{magazine.description}</p>
         </section>
-      </section>
-
+      </div>
     </div >
   )
 }

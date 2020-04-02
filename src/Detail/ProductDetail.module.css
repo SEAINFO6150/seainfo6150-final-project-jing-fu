@@ -102,22 +102,25 @@
 
 .submit {
   margin-top: 2rem;
-  height: 10%;
+  margin-left: 1rem;
+  width: 90%;
+  text-align: center;
+  padding:0.7rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  background-color: rgb(174, 76, 67);
+}
+
+
+.submit:hover {
+  background-color: rgb(134, 28, 28);
 }
 
 .checkout {
-  text-align: center;
-  width: 100%;
-  height: 3rem;
-  background-color: rgb(174, 76, 67);
   color: white;
   font-weight: bold;
-  font-size: 0.8rem;
 }
 
-.checkout:hover {
-  background-color: rgb(134, 28, 28);
-}
 
 .productDesc {
   display: flex;

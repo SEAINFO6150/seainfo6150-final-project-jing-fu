@@ -25,6 +25,7 @@ input {
 }
 
 /* section shipping */
+
 .shipping {
   display: flex;
   flex-direction: column;
@@ -422,7 +423,16 @@ a:hover {
   }
   select {
     height: 2.4rem;
-    font-size: 1rem
+    font-size: 1rem;
+  }
+  .tabs {
+    font-size: 1rem;
+  }
+  .giftIcon {
+    font-size: 1rem;
+  }
+  .giftText {
+    font-size: 1rem;
   }
 }
 

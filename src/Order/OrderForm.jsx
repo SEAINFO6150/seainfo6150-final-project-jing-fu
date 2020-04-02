@@ -164,14 +164,14 @@ const OrderForm = ({ magazine, onSubmit }) => {
             </div>
             <div className={styles.giftOptions}>
               <div className={styles.giftIcon}>gift options</div>
-              <label className={styles.gift1}>
+              <div className={styles.gift1}>
                 <input className={styles.giftOnly} type="checkbox" />
                 <p className={styles.giftText}>I would like to give this as a gift.</p>
-              </label>
-              <label className={styles.gift2} >
+              </div>
+              <div className={styles.gift2} >
                 <input className={styles.giftSubscribe} type="checkbox" />
                 <p className={styles.giftText}>I would like to give this as a gift and subscribe myself.</p>
-              </label>
+              </div>
             </div>
           </section>
         </div>
