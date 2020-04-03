@@ -31,35 +31,32 @@ const ProductDetail = ({ categoryId, productId }) => {
         </section>
       </div>
       <div className={styles.productDesc}>
-        <table className={styles.detail}>
-          <tbody>
-            <tr>
-              <th>Product</th>
-              <th>Detail</th>
-            </tr>
-            <tr>
-              <td>Publisher:</td>
-              <td>{magazine.publisher}</td>
-            </tr>
-            <tr>
-              <td>ISSN:</td>
-              <td>{magazine.ISSN}</td>
-            </tr>
-            <tr>
-              <td>Year Founded:</td>
-              <td>{magazine.yearFounded}</td>
-            </tr>
-            <tr>
-              <td>Editor:</td>
-              <td>{magazine.editor}</td>
-            </tr>
-            <tr>
-              <td>Learn More: </td>
-              <td><a className={styles.website} href={magazine.website}>{magazine.website}</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <section className={styles.description}>
+        <section className={styles.detailSection}>
+          <h4>Product Detail:</h4>
+          <div className={styles.details}>
+            <div className={styles.row}>
+              <div className={styles.firstCol}>Publisher:</div>
+              <div className={styles.secCol}>{magazine.publisher}</div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.firstCol}>ISSN:</div>
+              <div className={styles.secCol}>{magazine.ISSN}</div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.firstCol}>Founded:</div>
+              <div className={styles.secCol}>{magazine.yearFounded}</div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.firstCol}>Editor:</div>
+              <div className={styles.secCol}>{magazine.editor}</div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.firstCol}>Website: </div>
+              <div className={styles.secCol}><a className={styles.website} href={magazine.website}>{magazine.website}</a></div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.descriptionSection}>
           <h4>Product Description:</h4>
           <p className={styles.article}>{magazine.description}</p>
         </section>

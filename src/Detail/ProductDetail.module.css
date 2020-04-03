@@ -6,10 +6,6 @@
   justify-content: space-between;
 }
 
-.main {
-  display: flex;
-  margin-bottom: 2rem;
-}
 
 @media (max-width: 600px) {
   .main {
@@ -34,7 +30,13 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1000px){
+  .detailSection {
+    width: 30%;
+  }
+  .descriptionSection {
+    width: 40%;
+  }
   .productImage{
     width: 40%;
     margin-right:2rem;
@@ -42,32 +44,36 @@
   .productPrice {
     width: 40%;
   }
+  .title {
+    margin-bottom: 2rem;
+  }
   .checkout {
     height: 2.4rem;
     font-size: 1.2rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .productImage{
     width: 30%;
-    margin-left: 10%;
     margin-right:4rem;
   }
-  .productDesc {
-    margin: 0px 10% 0px 10%;
+  .productPrice {
+    width: 30%;
   }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .img {
   width: 100%;
   height: 100%;
   box-shadow: 10px 10px 10px -5px rgb(53,53,53)
-}
-
-.detail {
-  height: 30%;
-  text-align: left;
 }
 
 .productPrice {
@@ -104,6 +110,7 @@
 .submit {
   margin-top: 2rem;
   margin-left: 1rem;
+  height: 5%;
   width: 90%;
   text-align: center;
   padding:0.7rem;
@@ -124,15 +131,52 @@
 
 
 .productDesc {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  color:rgb(53, 53, 53);
+  justify-content: space-around;
+  color:#545658;
 }
 
-.detail {
+.detailSection {
   width: 40%;
   height: 100%;
-  padding: 20px;
+  min-width: 300px;
+}
+
+.details {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px dashed #dadcdf;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+.firstCol {
+  width: 20%;
+  border-left: 2px solid red;
+  line-height: 1;
+  margin: 8px 16px 8px 0;
+  padding-left: 10px;
+  max-width: 200px;
+  min-width: 50px;
+}
+
+.secCol {
+  width: 80%;
+  display: table-cell;
+  padding: 5px 15px;
+}
+
+.detailTable tr {
+  border: 10px dashed #545658;
 }
 
 td {
@@ -141,14 +185,14 @@ td {
 }
 
 .website {
-  color:rgb(53, 53, 53);
+  color:#545658
 }
 
 .website:hover {
   color:rgb(174, 76, 67);
 }
 
-.description {
+.descriptionSection {
   width: 50%;
   height: 100%;
   display: flex;
