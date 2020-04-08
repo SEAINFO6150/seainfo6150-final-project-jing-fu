@@ -21,26 +21,26 @@ const OrderForm = ({ magazine, onSubmit }) => {
             <h3>Shipping</h3>
             <div className={styles.ship}>
               <div className={styles.emailAddress}>
-                <input className={styles.email} name="email" type="email" placeholder="Email Address" required maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$" title="Please enter a valid email address" />
+                <input className={styles.email} name="email" type="email" placeholder="Email Address *" required maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$" title="Please enter a valid email address" />
               </div>
               <div className={styles.firstName}>
-                <input className={styles.first} name="firstname" type="text" placeholder="First Name" required pattern="^[a-zA-Z ]+$" title="This field must include only letters" />
+                <input className={styles.first} name="firstname" type="text" placeholder="First Name *" required pattern="^[a-zA-Z ]+$" title="This field must include only letters" />
               </div>
               <div className={styles.lastName} >
-                <input className={styles.last} name="lastname" type="text" placeholder="Last Name" required pattern="^[a-zA-Z ]{1,14}[a-zA-Z]$" title="This field must include only letters" />
+                <input className={styles.last} name="lastname" type="text" placeholder="Last Name *" required pattern="^[a-zA-Z ]{1,14}[a-zA-Z]$" title="This field must include only letters" />
               </div>
               <div className={styles.firstAddress}>
-                <input className={styles.address1} name="address1" type="text" placeholder="Address 1" maxLength="27" minLength="2" required pattern="^[a-zA-Z0-9 \\.\\-\\&amp;\\/]{2,27}$" title="Please enter a valid address" />
+                <input className={styles.address1} name="address1" type="text" placeholder="Address 1 *" maxLength="27" minLength="2" required pattern="^[a-zA-Z0-9 \\.\\-\\&amp;\\/]{2,27}$" title="Please enter a valid address" />
               </div>
               <div className={styles.secondAddress}>
                 <input className={styles.address2} name="address2" type="text" placeholder="Address 2" maxLength="27" pattern="^[a-zA-Z0-9 #\\.\\-\\&amp;\\/]{0,27}$" title="Please enter a valid address" />
               </div>
               <div className={styles.cityAddress}>
-                <input className={styles.city} name="city" type="text" placeholder="City" maxLength="27" minLength="2" required pattern="^[a-zA-Z ]{2,27}$" title="Please enter a valid city" />
+                <input className={styles.city} name="city" type="text" placeholder="City *" maxLength="27" minLength="2" required pattern="^[a-zA-Z ]{2,27}$" title="Please enter a valid city" />
               </div>
               <div className={styles.selectState}>
                 <select className={styles.state} name="state" required >
-                  <option value="">Select state</option>
+                  <option value="">Select state *</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -102,10 +102,10 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 </select>
               </div>
               <div className={styles.zipNum}>
-                <input className={styles.zipcode} name="zipcode" type="tel" placeholder="Zip Code" maxLength="5" required pattern="^[0-9]{5}$" title="Please enter a valid zip code" />
+                <input className={styles.zipcode} name="zipcode" type="tel" placeholder="Zip Code *" maxLength="5" required pattern="^[0-9]{5}$" title="Please enter a valid zip code" />
               </div>
               <div className={styles.telephone}>
-                <input className={styles.tel} name="tel" type="tel" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required title="Please enter a valid telephone number" placeholder="(000)000-0000" maxLength="14" />
+                <input className={styles.tel} name="tel" type="tel" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" title="Please enter a valid telephone number" placeholder="(000)000-0000" maxLength="14" />
               </div>
             </div>
           </section>
@@ -117,12 +117,12 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 <li className={styles.tab} role="presentation"><a href="https://www.paypal.com/us/signin" role="tab">PayPal</a></li>
               </ul>
               <div className={styles.cardNumber}>
-                <input className={styles.cardNum} type="tel" placeholder="Credit card number" required pattern="^((4\d{3})|(5[1-5]\d{2})|(6011))-?\d{4}-?\d{4}-?\d{4}|3[4,7]\d{13}$" title="Please enter a valid credit card number" />
+                <input className={styles.cardNum} type="tel" placeholder="Credit card number *" required pattern="^((4\d{3})|(5[1-5]\d{2})|(6011))-?\d{4}-?\d{4}-?\d{4}|3[4,7]\d{13}$" title="Please enter a valid credit card number" />
               </div>
               <div className={styles.cardLogo}><img className={styles.creditCard} src="/images/card-logo.jpg" alt="card logo" /></div>
               <div className={styles.expMonth}>
                 <select className={styles.month} required >
-                  <option value="">Month</option>
+                  <option value="">Month *</option>
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -139,7 +139,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
               </div>
               <div className={styles.expYear}>
                 <select className={styles.year} required >
-                  <option value="">Year</option>
+                  <option value="">Year *</option>
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
                   <option value="2022">2022</option>
@@ -154,7 +154,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 </select>
               </div>
               <div className={styles.cvv}>
-                <input className={styles.cvvNum} placeholder="CVV" required type="tel" pattern="^[0-9]{3,4}$" title="Please enter a valid cvv number" />
+                <input className={styles.cvvNum} placeholder="CVV *" required type="tel" pattern="^[0-9]{3,4}$" title="Please enter a valid cvv number" />
                 <div className={styles.cvvicon}>
                   <a href="https://www.anthonytravel.com/files/security_code_sample.jpg">
                     <img src="/images/cvv-icon.png" alt="cvv icon" />

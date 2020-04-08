@@ -13,14 +13,14 @@ const OrderSummary = ({ magazine }) => {
       <h2 className={styles.title}>Order Summary</h2>
       <div className={styles.orderDetails}>
         <div className={styles.imageHolder}>
-          <a href={`/${magazine.categoryId}/${magazine.productId}`}>
+          <a href={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>
             <img className={styles.productPic} src={magazine.image._url} alt={magazine.title} />
           </a>
         </div>
         <div className={styles.productDetail}>
           <div>
             <h3>
-              <a className={styles.titleLink} href={`/${magazine.categoryId}/${magazine.productId}`} >
+              <a className={styles.titleLink} href={`/product-detail/${magazine.categoryId}/${magazine.productId}`} >
                 {magazine.name}
               </a>
             </h3>
@@ -46,7 +46,7 @@ const OrderSummary = ({ magazine }) => {
                 <td>${magazine.ourPrice}</td>
               </tr>
               <tr>
-                <td>Estimated WA Tax:</td>
+                <td>Estimated Tax:</td>
                 <td>${tax}</td>
               </tr>
               <tr>
