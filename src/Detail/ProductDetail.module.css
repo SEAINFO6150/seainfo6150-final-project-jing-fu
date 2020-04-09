@@ -112,6 +112,7 @@
   height: 5%;
   width: 92%;
   text-align: center;
+  vertical-align: end;
   padding:0.7rem;
   border-radius: 5px;
   font-size: 0.8rem;
