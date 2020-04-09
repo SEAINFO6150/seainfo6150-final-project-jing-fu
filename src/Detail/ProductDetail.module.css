@@ -25,7 +25,6 @@
     width: 60%;
   }
   .checkout {
-    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -43,12 +42,12 @@
   }
   .productPrice {
     width: 40%;
+    height: 100%;
   }
   .title {
-    margin-bottom: 2rem;
+    height: 15%;
   }
   .checkout {
-    height: 2.4rem;
     font-size: 1.2rem;
   }
 }
@@ -60,6 +59,10 @@
   }
   .productPrice {
     width: 30%;
+    height: 100%;
+  }
+  .title {
+    height: 12%;
   }
 }
 
@@ -116,12 +119,12 @@
   padding:0.7rem;
   border-radius: 5px;
   font-size: 0.8rem;
-  background-color: rgb(174, 76, 67);
+  background-color: rgb(218, 125, 56);;
 }
 
 
 .submit:hover {
-  background-color: rgb(134, 28, 28);
+  background-color: rgb(183, 96, 10);
 }
 
 .checkout {

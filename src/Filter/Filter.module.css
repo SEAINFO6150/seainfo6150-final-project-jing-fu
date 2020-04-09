@@ -1,4 +1,3 @@
-
 .sortBy {
   height: 2.2rem;
   border: .05rem solid #dadada;
@@ -7,4 +6,10 @@
   color:rgba(89, 89, 89);
   background-color: white;
   padding-left: 1rem;
+}
+
+.sortBy:hover {
+  color:rgba(89, 89, 89);
+  background-color: rgb(191, 191, 191);
+  border:.08rem solid rgb(202,143,101);
 }

@@ -10,6 +10,12 @@ const Confirm = ({ magazine, submittedForm }) => {
         return <Error />;
     }
 
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
     return (
         <div className={styles.container}>
             <section className={styles.head}>

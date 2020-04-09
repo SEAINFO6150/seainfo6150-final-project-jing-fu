@@ -12,6 +12,12 @@ const OrderForm = ({ magazine, onSubmit }) => {
     return <Error />;
   }
 
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+
   return (
     <form className={styles.form} onSubmit={onSubmit}>
       <section className={styles.checkout}>

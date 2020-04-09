@@ -9,6 +9,10 @@
   column-gap: 30px;
 }
 
+.bestSeller {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 800px) {
   .top {
       display: grid;

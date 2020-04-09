@@ -364,14 +364,17 @@ select {
 .submitOrder {
   margin: 2rem 10% 0 0;
   width: 30%;
-  background-color: rgb(174, 76, 67);
+  height: 2.5rem;
+  font-size: 0.9rem;
+  background-color: rgb(218, 125, 56);
   color: white;
   font-weight: bold;
   float: right;
 }
 
 .submitOrder:hover {
-  background-color: rgb(134, 28, 28);
+  cursor: pointer;
+  background-color: rgb(183, 96, 10);
 }
 
 a {

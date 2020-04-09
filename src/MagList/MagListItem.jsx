@@ -12,15 +12,13 @@ const MagListItem = ({ magazine }) => {
           <img className={styles.img} src={magazine.image._url} alt={magazine.title} />
         </Link>
       </div>
-        <p className={styles.title}>{magazine.title}</p>
-      <div className={styles.priceTag}>
-        <span>{magazine.oneYearIssues}</span> :
-        <span className={styles.price}>  {magazine.ourPrice}</span>
+      <div className={styles.title}>
+        <Link className={styles.titleLink} to={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>{magazine.title}</Link>
       </div>
-      <div className={styles.subscribe}>
-      <Link className={styles.submit} to={`/product-detail/${magazine.categoryId}/${magazine.productId}`}>
-        Subscribe
-      </Link>  
+      <div className={styles.priceTag}>
+        <p className={styles.mainPrice}>{magazine.oneYearIssues}:<span className={styles.price}> {magazine.ourPrice}</span></p>
+        <p className={styles.discount}>Cover price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
+        <p className={styles.discount}>You Saved: {magazine.youSave}</p>
       </div>
     </div>
   )

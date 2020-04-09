@@ -23,15 +23,13 @@ const ProductDetail = ({ categoryId, productId }) => {
             <p>You Saved: {magazine.youSave}</p>
             {magazine.oneYearIssues}
           </div>
-          <div className={styles.submit}>
             <Link className={styles.checkout} to={`/order/${magazine.productId}`}>
-              Check Out
+            <div className={styles.submit}>Check Out</div>
             </Link>
-          </div>
         </section>
       </div>
       <div className={styles.productDesc}>
-        <section className={styles.detailSection}>
+      <section className={styles.detailSection}>
           <h4>Product Detail:</h4>
           <div className={styles.details}>
             <div className={styles.row}>
@@ -59,7 +57,7 @@ const ProductDetail = ({ categoryId, productId }) => {
         <section className={styles.descriptionSection}>
           <h4>Product Description:</h4>
           <p className={styles.article}>{magazine.description}</p>
-        </section>
+        </section>v
       </div>
     </div >
   )

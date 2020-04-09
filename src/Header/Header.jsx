@@ -20,7 +20,6 @@ const Header = () => {
                 <Link className={styles.link} to="/category/eng-001">Engineering</Link>
                 <Link className={styles.link} to="/category/elec-001">Electronics</Link>
                 <Link className={styles.link} to="/category/sci-001">Science</Link>
-                <Link className={styles.link} to="/about">About</Link>
             </nav>
         </div>
     )

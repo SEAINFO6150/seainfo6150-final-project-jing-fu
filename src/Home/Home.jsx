@@ -25,20 +25,20 @@ const Home = () => {
                 </div>
                 <div className={styles.signup}>
                     <h4>Newsletter Signup</h4>
-                    <Form/>
+                    <Form />
                 </div>
             </section>
-            <section>
-            <h3>Best Sellers:</h3>
-            <hr/>
-            <MagList magazines={bestSellMags} />
+            <section className={styles.bestSeller}>
+                <h3>Best Sellers:</h3>
+                <hr />
+                <MagList magazines={bestSellMags} />
             </section>
             <section>
-            <h3>Recommend for you:</h3>
-            <hr/>
-            <MagList magazines={recommendMags} />
+                <h3>Recommend for you:</h3>
+                <hr />
+                <MagList magazines={recommendMags} />
             </section>
-            
+
         </div>
     )
 }
