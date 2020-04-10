@@ -57,7 +57,7 @@ const ProductDetail = ({ categoryId, productId }) => {
         <section className={styles.descriptionSection}>
           <h4>Product Description:</h4>
           <p className={styles.article}>{magazine.description}</p>
-        </section>v
+        </section>
       </div>
     </div >
   )
