@@ -123,7 +123,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 <li className={styles.tab} role="presentation"><a href="https://www.paypal.com/us/signin" role="tab">PayPal</a></li>
               </ul>
               <div className={styles.cardNumber}>
-                <input className={styles.cardNum} type="tel" placeholder="Credit card number *" required pattern="^((4\d{3})|(5[1-5]\d{2})|(6011))-?\d{4}-?\d{4}-?\d{4}|3[4,7]\d{13}$" title="Please enter a valid credit card number" />
+                <input className={styles.cardNum} type="tel" placeholder="Credit card number *" required pattern="^[0-9]{16}$" title="Please enter a 16-digit credit card number" />
               </div>
               <div className={styles.cardLogo}><img className={styles.creditCard} src="/images/card-logo.jpg" alt="card logo" /></div>
               <div className={styles.expMonth}>
