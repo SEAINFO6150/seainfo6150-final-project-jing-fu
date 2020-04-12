@@ -5,7 +5,7 @@
 }
 
 .signup {
-  background-color: rgb(174, 76, 67);
+  background-color: rgb(218, 125, 56);
   color: rgb(255, 255, 255);
   width: 35%;
   padding-right: 10px;
@@ -13,7 +13,8 @@
 }
 
 .signup:hover {
-  background-color: rgb(134, 28, 28);
+  cursor: pointer;
+  background-color: rgb(183, 96, 10);
 }
 
 .submitText {
