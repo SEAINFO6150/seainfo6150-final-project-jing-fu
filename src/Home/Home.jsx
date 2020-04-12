@@ -8,6 +8,12 @@ import magazines from ".././data/magazines.json";
 
 const Home = () => {
 
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+
     const bestSellMags = magazines.slice(0, 4);
 
     const recommendMags = magazines.slice(4, 8);

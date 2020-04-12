@@ -3,6 +3,13 @@ import React from 'react'
 import styles from './About.module.css';
 
 const About = () => {
+
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+
   return (
     <div className={styles.container}>
       <section className={styles.aboutus}>
@@ -15,17 +22,17 @@ const About = () => {
         Subscription prices are updated daily to reflect our lowest price approved by the publishers. A long-standing personal relationship with each publisher allows us to offer you great deals on your favorite subscriptions and to deliver prompt and reliable service.</p>
         <p className={styles.desc}>Our team is dedicated to providing you with the lowest prices on top magazines, and we work closely with publishers to make even bigger savings available to you. Our team is dedicated to providing you with the lowest prices on top magazines, and we work closely with publishers to make even bigger savings available to you. </p>
         <ul>
-            <li>
-              <strong>The absolute lowest prices: </strong>We already offer the lowest, prices for all our magazines on our site, but that doesn’t mean we ever stop negotiating to get even lower prices for you.
+          <li>
+            <strong>The absolute lowest prices: </strong>We already offer the lowest, prices for all our magazines on our site, but that doesn’t mean we ever stop negotiating to get even lower prices for you.
           </li>
-            <li>
-              <strong>Easy cancellation and refunds: </strong>No longer happy with your subscription? No problem—we offer a 100% money-back guarantee. Just cancel within 6 months of ordering and we’ll immediately refund you for undelivered issues.
+          <li>
+            <strong>Easy cancellation and refunds: </strong>No longer happy with your subscription? No problem—we offer a 100% money-back guarantee. Just cancel within 6 months of ordering and we’ll immediately refund you for undelivered issues.
           </li>
-            <li>
-              <strong>Crystal-clear policies: </strong>Some surprises are good, but surprises that cost you extra money deﬁnitely aren’t. That’s why we promise to never charge any extra or hidden fees and to not, unless you opt in, automatically renew your subscription.
+          <li>
+            <strong>Crystal-clear policies: </strong>Some surprises are good, but surprises that cost you extra money deﬁnitely aren’t. That’s why we promise to never charge any extra or hidden fees and to not, unless you opt in, automatically renew your subscription.
           </li>
-          </ul>
-          <p className={styles.desc}>These limited-time special offers are updated regularly and often involve some of today's most popular magazines and our customers' favorite titles.
+        </ul>
+        <p className={styles.desc}>These limited-time special offers are updated regularly and often involve some of today's most popular magazines and our customers' favorite titles.
         From celebrity news to sports to fashion, TechMagas.com offers subscriptions to over a thousand magazines. <br /><br />Our broad selection of magazines assures that we have something for everyone, and our gift subscription program makes it simple to give a gift that will last all year long.
         </p>
       </section>

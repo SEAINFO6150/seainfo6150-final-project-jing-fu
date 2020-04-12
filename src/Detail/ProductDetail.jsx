@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 
 const ProductDetail = ({ categoryId, productId }) => {
 
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+
   const magazine = magazines.find(magazine => magazine.categoryId === categoryId && magazine.productId === productId);
 
   return (
@@ -23,13 +29,13 @@ const ProductDetail = ({ categoryId, productId }) => {
             <p>You Saved: {magazine.youSave}</p>
             {magazine.oneYearIssues}
           </div>
-            <Link className={styles.checkout} to={`/order/${magazine.productId}`}>
+          <Link className={styles.checkout} to={`/order/${magazine.productId}`}>
             <div className={styles.submit}>Check Out</div>
-            </Link>
+          </Link>
         </section>
       </div>
       <div className={styles.productDesc}>
-      <section className={styles.detailSection}>
+        <section className={styles.detailSection}>
           <h4>Product Detail:</h4>
           <div className={styles.details}>
             <div className={styles.row}>

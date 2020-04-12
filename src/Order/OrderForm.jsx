@@ -108,10 +108,10 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 </select>
               </div>
               <div className={styles.zipNum}>
-                <input className={styles.zipcode} name="zipcode" type="tel" placeholder="Zip Code *" maxLength="5" required pattern="^[0-9]{5}$" title="Please enter a valid zip code" />
+                <input className={styles.zipcode} name="zipcode" type="tel" placeholder="Zip Code *" maxLength="5" required pattern="^[0-9]{5}$" title="Please enter a 5-digit number zip code" />
               </div>
               <div className={styles.telephone}>
-                <input className={styles.tel} name="tel" type="tel" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" title="Please enter a valid telephone number" placeholder="(000)000-0000" maxLength="14" />
+                <input className={styles.tel} name="tel" type="tel" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" title="Please enter a 10-digit number telephone number" placeholder="(000)000-0000" maxLength="14" />
               </div>
             </div>
           </section>
@@ -160,7 +160,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 </select>
               </div>
               <div className={styles.cvv}>
-                <input className={styles.cvvNum} placeholder="CVV *" required type="tel" pattern="^[0-9]{3,4}$" title="Please enter a valid cvv number" />
+                <input className={styles.cvvNum} placeholder="CVV *" required type="tel" pattern="^[0-9]{3,4}$" title="Please enter a 3 or 4-digit cvv number" />
                 <div className={styles.cvvicon}>
                   <a href="https://www.anthonytravel.com/files/security_code_sample.jpg">
                     <img src="/images/cvv-icon.png" alt="cvv icon" />

@@ -110,12 +110,12 @@
   font-size: 1rem;
 }
 
-.submit {
+.checkout {
   margin-top: 2rem;
+  margin-left: 0.5rem;
   height: 5%;
   width: 92%;
   text-align: center;
-  vertical-align: end;
   padding:0.7rem;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -123,11 +123,11 @@
 }
 
 
-.submit:hover {
+.checkout:hover {
   background-color: rgb(183, 96, 10);
 }
 
-.checkout {
+.submit {
   color: white;
   font-weight: bold;
 }
