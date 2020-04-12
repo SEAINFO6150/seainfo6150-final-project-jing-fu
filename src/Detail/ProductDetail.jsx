@@ -24,8 +24,8 @@ const ProductDetail = ({ categoryId, productId }) => {
         <section className={styles.productPrice}>
           <h2 className={styles.title}>{magazine.name}</h2>
           <div className={styles.price}>
-            <p className={styles.emphasis}>Our price: ${magazine.ourPrice}</p>
-            <p>Cover price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
+            <p className={styles.emphasis}>Our Price: ${magazine.ourPrice}</p>
+            <p>Cover Price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
             <p>You Saved: {magazine.youSave}</p>
             {magazine.oneYearIssues}
           </div>

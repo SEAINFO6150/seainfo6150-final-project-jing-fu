@@ -17,8 +17,8 @@ const MagListItem = ({ magazine }) => {
       </div>
       <div className={styles.priceTag}>
         <p className={styles.mainPrice}>{magazine.oneYearIssues}:<span className={styles.price}> {magazine.ourPrice}</span></p>
-        <p className={styles.discount}>Cover price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
-        <p className={styles.discount}>You Saved: {magazine.youSave}</p>
+        <p className={styles.discount}>Cover Price: <span className={styles.deletePrice}>${magazine.coverPrice}</span></p>
+        <p className={styles.discount}>{magazine.discount} Newstand Price</p>
       </div>
     </div>
   )
