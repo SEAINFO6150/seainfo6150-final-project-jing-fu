@@ -5,6 +5,8 @@ import styles from './ProductDetail.module.css';
 import magazines from ".././data/magazines.json";
 import { Link } from 'react-router-dom';
 
+import Error from "../Error/Error";
+
 const ProductDetail = ({ categoryId, productId }) => {
 
   window.scroll({
@@ -14,6 +16,10 @@ const ProductDetail = ({ categoryId, productId }) => {
   });
 
   const magazine = magazines.find(magazine => magazine.categoryId === categoryId && magazine.productId === productId);
+
+  if (magazine == undefined || magazine == null) {
+    return <Error/>;
+  }
 
   return (
     <div className={styles.container}>
@@ -56,7 +62,7 @@ const ProductDetail = ({ categoryId, productId }) => {
             </div>
             <div className={styles.row}>
               <div className={styles.firstCol}>Website: </div>
-              <div className={styles.secCol}><a className={styles.website} href={magazine.website}>{magazine.website}</a></div>
+              <div className={styles.secCol}><a className={styles.website} href={`https://${magazine.website}`}>{magazine.website}</a></div>
             </div>
           </div>
         </section>
