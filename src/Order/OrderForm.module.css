@@ -24,6 +24,15 @@ input {
   color:rgb(89, 89, 89);
 }
 
+
+input:invalid {
+  background-color: rgb(232, 234, 237);
+}
+
+select:invalid {
+  background-color: rgb(232, 234, 237);
+}
+
 /* section shipping */
 
 .shipping {
