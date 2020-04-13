@@ -22,7 +22,7 @@ export default class Form extends Component {
     ) : (
       <form onSubmit={this.onSubmit}>
         <input className={styles.email} placeholder="Email Address *" required type="email" name="email" maxLength="50" pattern="^[^@ ]+@[\w\-]+(\.(?!(?:[^0-9]*[0-9]){3})[\w\-]{2,20})+$"/>
-        <input className={styles.signup} type="submit" value="Subscribe Me!" />
+        <input className={styles.signup} type="submit" value="Subscribe Me" />
       </form>
     );
   }
