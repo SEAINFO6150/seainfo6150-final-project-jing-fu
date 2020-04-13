@@ -46,7 +46,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
               </div>
               <div className={styles.selectState}>
                 <select className={styles.state} name="state" required >
-                  <option value="">Select state *</option>
+                  <option value="">Select State *</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -123,7 +123,7 @@ const OrderForm = ({ magazine, onSubmit }) => {
                 <li className={styles.tab} role="presentation"><a href="https://www.paypal.com/us/signin" role="tab">PayPal</a></li>
               </ul>
               <div className={styles.cardNumber}>
-                <input className={styles.cardNum} type="tel" placeholder="Credit card number *" required pattern="^[0-9]{16}$" title="Please enter a 16-digit credit card number" />
+                <input className={styles.cardNum} type="tel" placeholder="Credit Card Number *" required pattern="^[0-9]{16}$" title="Please enter a 16-digit credit card number" />
               </div>
               <div className={styles.cardLogo}><img className={styles.creditCard} src="/images/card-logo.jpg" alt="card logo" /></div>
               <div className={styles.expMonth}>
